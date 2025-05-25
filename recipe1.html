@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <title>Recipe 1 Title - My Wedding Recipes</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Optional: Style checkboxes for a cleaner look */
+        .checkbox-list {
+            list-style: none;
+            padding: 0;
+        }
+        .checkbox-list li {
+            margin-bottom: 0.5em;
+            font-size: 1.1em;
+        }
+        .checkbox-list input[type="checkbox"] {
+            transform: scale(1.2);
+            margin-right: 0.6em;
+            accent-color: #333;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,16 +41,20 @@
     <div class="container">
         <h2>Recipe 1 Title</h2>
         <h3>Ingredients</h3>
-        <ul>
-            <li>Ingredient 1</li>
-            <li>Ingredient 2</li>
-            <!-- Add more ingredients -->
+        <ul class="checkbox-list">
+            <li><label><input type="checkbox"> 2 cups (480 ml) whole milk</label></li>
+            <li><label><input type="checkbox"> 1 cup (200 g) granulated sugar</label></li>
+            <li><label><input type="checkbox"> 3 large eggs (about 150 g)</label></li>
+            <li><label><input type="checkbox"> 1 tbsp (14 g) unsalted butter, melted</label></li>
+            <li><label><input type="checkbox"> 1 tsp (5 ml) vanilla extract</label></li>
         </ul>
         <h3>Instructions</h3>
-        <ol>
-            <li>Step 1</li>
-            <li>Step 2</li>
-            <!-- Add more steps -->
+        <ol class="checkbox-list">
+            <li><label><input type="checkbox"> Preheat your oven to 350°F (175°C).</label></li>
+            <li><label><input type="checkbox"> In a bowl, whisk together the eggs and sugar until pale and fluffy.</label></li>
+            <li><label><input type="checkbox"> Add milk, melted butter, and vanilla. Mix well.</label></li>
+            <li><label><input type="checkbox"> Pour the mixture into a greased baking dish.</label></li>
+            <li><label><input type="checkbox"> Bake for 30–35 minutes or until set and golden. Let cool before serving.</label></li>
         </ol>
         <a href="index.html">&larr; Back to Home</a>
     </div>
