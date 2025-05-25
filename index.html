@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>My Wedding Recipes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Optional: Style for the image container */
+        .hero-image {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,7 +35,13 @@
         <a href="recipe9.html">Recipe 9</a>
         <a href="recipe10.html">Recipe 10</a>
     </nav>
+
     <div class="container">
+        <div class="hero-image">
+            <!-- Replace 'wedding-photo.jpg' with your image filename -->
+            <img src="wedding-photo.jpg" alt="Wedding Celebration" />
+        </div>
+
         <h2>Welcome!</h2>
         <p>Discover the special recipes shared at our wedding. Click on any recipe to see the details.</p>
         <ul>
@@ -38,8 +57,9 @@
             <li><a href="recipe10.html">Recipe 10 Title</a></li>
         </ul>
     </div>
+
     <footer>
-        &copy; 2025 Your Names. All rights reserved.
+        &copy; 2025 Thomas Malachowski and Lily Coyle. All rights reserved.
     </footer>
 </body>
 </html>
