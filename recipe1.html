@@ -27,6 +27,9 @@
             font-size: 1em;
             text-align: right;
         }
+        .alt-unit {
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -57,11 +60,41 @@
 
         <h3>Ingredients</h3>
         <ul class="checkbox-list" id="ingredients-list">
-            <li><label><input type="checkbox"> <span class="qty" data-base="2">2</span> cups (480 ml) whole milk</label></li>
-            <li><label><input type="checkbox"> <span class="qty" data-base="1">1</span> cup (200 g) granulated sugar</label></li>
-            <li><label><input type="checkbox"> <span class="qty" data-base="3">3</span> large eggs (about 150 g)</label></li>
-            <li><label><input type="checkbox"> <span class="qty" data-base="1">1</span> tbsp (14 g) unsalted butter, melted</label></li>
-            <li><label><input type="checkbox"> <span class="qty" data-base="1">1</span> tsp (5 ml) vanilla extract</label></li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="2">2</span> cups
+                    (<span class="alt-qty" data-alt-base="480">480</span> ml) whole milk
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1">1</span> cup
+                    (<span class="alt-qty" data-alt-base="200">200</span> g) granulated sugar
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="3">3</span> large eggs
+                    (<span class="alt-qty" data-alt-base="150">150</span> g)
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1">1</span> tbsp
+                    (<span class="alt-qty" data-alt-base="14">14</span> g) unsalted butter, melted
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1">1</span> tsp
+                    (<span class="alt-qty" data-alt-base="5">5</span> ml) vanilla extract
+                </label>
+            </li>
         </ul>
         <h3>Instructions</h3>
         <ol class="checkbox-list">
@@ -77,16 +110,21 @@
         &copy; 2025 Your Names. All rights reserved.
     </footer>
     <script>
-        // Ingredient scaling logic
+        // Ingredient scaling logic for both main and alternative units
         const scalorInput = document.getElementById('scalor');
         const qtySpans = document.querySelectorAll('.qty');
+        const altQtySpans = document.querySelectorAll('.alt-qty');
 
         function updateQuantities() {
             const scalor = parseFloat(scalorInput.value) || 1;
             qtySpans.forEach(span => {
                 const base = parseFloat(span.getAttribute('data-base'));
                 let scaled = base * scalor;
-                // Format: integers as is, decimals to 2 places
+                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+            });
+            altQtySpans.forEach(span => {
+                const base = parseFloat(span.getAttribute('data-alt-base'));
+                let scaled = base * scalor;
                 span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
             });
         }
