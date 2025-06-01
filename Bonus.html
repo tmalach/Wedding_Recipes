@@ -301,24 +301,20 @@
         updateQuantities();
         function updateLimoncelloTable() {
             // Inputs
-            const totalVolume = parseFloat(document.getElementById('totalVolume').value) || 1; // in L
-            const everclearABV = parseFloat(document.getElementById('everclearABV').value) || 95;
-            const finalABV = parseFloat(document.getElementById('finalABV').value) || 30;
-            const sugarConc = parseFloat(document.getElementById('sugarConc').value) || 300;
+            const totalVolume = parseFloat(document.getElementById('totalVolume').value) || 1000; // in mL
+            const everclearABV = parseFloat(document.getElementById('everclearABV').value) || 75.5;
+            const finalABV = parseFloat(document.getElementById('finalABV').value) || 34;
+            const sugarConc = parseFloat(document.getElementById('sugarConc').value) || 200;
         
             // Constants
             const sugarDensity = 0.64; // ml per gram of sugar
         
             // Calculations (all in liters first)
-            const everclearVol_L = (totalVolume * finalABV / everclearABV);
-            const lemons = Math.round(totalVolume * 8);
+            const everclearVol_mL = (totalVolume * finalABV / everclearABV).toFixed(2);
+            const lemons = Math.ceil(totalVolume * 10);
             const totalSugar = totalVolume * sugarConc; // in grams
-            const sugarVolume_L = (totalSugar * sugarDensity) / 1000; // in liters
-            const waterVol_L = totalVolume - everclearVol_L - sugarVolume_L;
-        
-            // Convert to mL for display
-            const everclearVol_mL = Math.round(everclearVol_L * 1000);
-            const waterVol_mL = Math.round(waterVol_L * 1000);
+            const sugarVolume_mL = (totalSugar * sugarDensity).toFixed(2); // in milliliters
+            const waterVol_mL = (totalVolume - everclearVol_mL - sugarVolume_mL).toFixed(2);
         
             // Output
             document.getElementById('everclearVol').textContent = everclearVol_mL + ' mL';
