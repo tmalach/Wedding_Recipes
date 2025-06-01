@@ -132,7 +132,7 @@
             </tr>
             <tr>
                 <td>Everclear</td>
-                <td class="limoncello-result" id="everclearVol">0.32 L</td>
+                <td class="limoncello-result" id="everclearVol">320 mL</td>
             </tr>
             <tr>
                 <td>Lemons</td>
@@ -140,7 +140,7 @@
             </tr>
             <tr>
                 <td>Water</td>
-                <td class="limoncello-result" id="waterVol">0.68 L</td>
+                <td class="limoncello-result" id="waterVol">680 mL</td>
             </tr>
             <tr>
                 <td>Total Sugar</td>
@@ -301,7 +301,7 @@
         updateQuantities();
         function updateLimoncelloTable() {
             // Inputs
-            const totalVolume = parseFloat(document.getElementById('totalVolume').value) || 1;
+            const totalVolume = parseFloat(document.getElementById('totalVolume').value) || 1; // in L
             const everclearABV = parseFloat(document.getElementById('everclearABV').value) || 95;
             const finalABV = parseFloat(document.getElementById('finalABV').value) || 30;
             const sugarConc = parseFloat(document.getElementById('sugarConc').value) || 300;
@@ -309,19 +309,21 @@
             // Constants
             const sugarDensity = 0.64; // ml per gram of sugar
         
-            // Calculations
-            const everclearVol = (totalVolume * finalABV / everclearABV);
+            // Calculations (all in liters first)
+            const everclearVol_L = (totalVolume * finalABV / everclearABV);
             const lemons = Math.round(totalVolume * 8);
-            const totalSugar = totalVolume * sugarConc;
-            // Adjust water volume to account for sugar volume
-            // Water volume = total volume - everclear volume - sugar volume
-            const sugarVolume = totalSugar * sugarDensity / 1000; // convert ml to liters
-            const waterVol = totalVolume - everclearVol - sugarVolume;
+            const totalSugar = totalVolume * sugarConc; // in grams
+            const sugarVolume_L = (totalSugar * sugarDensity) / 1000; // in liters
+            const waterVol_L = totalVolume - everclearVol_L - sugarVolume_L;
+        
+            // Convert to mL for display
+            const everclearVol_mL = Math.round(everclearVol_L * 1000);
+            const waterVol_mL = Math.round(waterVol_L * 1000);
         
             // Output
-            document.getElementById('everclearVol').textContent = everclearVol.toFixed(2) + ' L';
+            document.getElementById('everclearVol').textContent = everclearVol_mL + ' mL';
             document.getElementById('lemons').textContent = lemons;
-            document.getElementById('waterVol').textContent = waterVol.toFixed(2) + ' L';
+            document.getElementById('waterVol').textContent = waterVol_mL + ' mL';
             document.getElementById('totalSugar').textContent = Math.round(totalSugar) + ' g';
         }
         
