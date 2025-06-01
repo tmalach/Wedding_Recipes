@@ -12,19 +12,73 @@ header {
     text-align: center;
 }
 nav {
-    margin: 0 0 1rem 0;
-    text-align: center;
+    background: #333;
+    padding: 0.5em 1em;
+    font-family: sans-serif;
+    position: relative;
 }
-nav a {
-    color: #333;
-    text-decoration: none;
-    margin: 0 0.5rem;
+
+/* Hide the dropdown content by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #fffbe7;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+.dropdown {
+display: inline-block;
+position: relative;
+}
+/* Dropdown button/link styling */
+.dropbtn {
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    color: #fff;
     font-weight: bold;
-    border-bottom: 2px solid transparent;
-    transition: border 0.2s;
 }
-nav a:hover {
-    border-bottom: 2px solid #333;
+
+/* Dropdown links */
+.dropdown-content a {
+    display: block;
+    padding: 0.7em 1em;
+    color: #2c3e50;
+    text-decoration: none;
+    border-bottom: 1px solid #f4e2d8;
+    transition: background 0.2s;
+}
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+.dropdown-content a:hover {
+    background: #fffbe7;
+    color: #bfa700;
+}
+
+/* Home link styling */
+nav > a {
+    padding: 0.5em 1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav > a:hover {
+    background: none;
+    color: #fff;
+    border-radius: 8px;
 }
 .container {
     max-width: 700px;
