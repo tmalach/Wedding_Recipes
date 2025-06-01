@@ -29,11 +29,12 @@
         .dropdown-content {
             display: none;
             position: absolute;
+            left: 0;
+            top: 100%;
             background: #fffbe7;
             min-width: 180px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.10);
             z-index: 1;
-            margin-top: 0.5em;
             border-radius: 8px;
         }
         
@@ -42,7 +43,10 @@
         .dropdown:focus-within .dropdown-content {
             display: block;
         }
-        
+        .dropdown {
+        display: inline-block;
+        position: relative;
+        }
         /* Dropdown button/link styling */
         .dropbtn {
             background: none;
