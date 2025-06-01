@@ -117,6 +117,10 @@
                 <td><input type="number" id="everclearABV" value="95" min="30" max="96" step="1"></td>
             </tr>
             <tr>
+                <td>Final ABV of Limoncello (%)</td>
+                <td><input type="number" id="finalABV" value="30" min="5" max="50" step="0.1"></td>
+            </tr>
+            <tr>
                 <td>Final Sugar Concentration (g/L)</td>
                 <td><input type="number" id="sugarConc" value="300" min="100" max="500" step="10"></td>
             </tr>
@@ -299,14 +303,20 @@
             // Inputs
             const totalVolume = parseFloat(document.getElementById('totalVolume').value) || 1;
             const everclearABV = parseFloat(document.getElementById('everclearABV').value) || 95;
+            const finalABV = parseFloat(document.getElementById('finalABV').value) || 30;
             const sugarConc = parseFloat(document.getElementById('sugarConc').value) || 300;
-            const targetABV = 30; // Target final ABV for limoncello
+        
+            // Constants
+            const sugarDensity = 0.64; // ml per gram of sugar
         
             // Calculations
-            const everclearVol = (totalVolume * targetABV / everclearABV);
+            const everclearVol = (totalVolume * finalABV / everclearABV);
             const lemons = Math.round(totalVolume * 8);
-            const waterVol = totalVolume - everclearVol;
             const totalSugar = totalVolume * sugarConc;
+            // Adjust water volume to account for sugar volume
+            // Water volume = total volume - everclear volume - sugar volume
+            const sugarVolume = totalSugar * sugarDensity / 1000; // convert ml to liters
+            const waterVol = totalVolume - everclearVol - sugarVolume;
         
             // Output
             document.getElementById('everclearVol').textContent = everclearVol.toFixed(2) + ' L';
@@ -316,9 +326,9 @@
         }
         
         // Set up event listeners
-        document.getElementById('totalVolume').addEventListener('input', updateLimoncelloTable);
-        document.getElementById('everclearABV').addEventListener('input', updateLimoncelloTable);
-        document.getElementById('sugarConc').addEventListener('input', updateLimoncelloTable);
+        ['totalVolume', 'everclearABV', 'finalABV', 'sugarConc'].forEach(id => {
+            document.getElementById(id).addEventListener('input', updateLimoncelloTable);
+        });
         
         // Initialize on page load
         updateLimoncelloTable();
