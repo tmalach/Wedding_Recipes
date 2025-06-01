@@ -105,7 +105,7 @@
             </tr>
             <tr>
                 <td>Total Volume of Limoncello (asdmL)</td>
-                <td><input type="number" id="totalVolume" value="1000" min="0.1" step="25"></td>
+                <td><input type="number" id="totalVolume" value="1000" min="25" step="25"></td>
             </tr>
             <tr>
                 <td>Starting ABV of Everclear (%)</td>
@@ -305,16 +305,16 @@
             const sugarDensity = 0.64; // ml per gram of sugar
         
             // Calculations (all in liters first)
-            const everclearVol_mL = (totalVolume * finalABV / everclearABV).toFixed(2);
+            const everclearVol_mL = (totalVolume * finalABV / everclearABV);
             const lemons = Math.ceil(totalVolume * 10);
             const totalSugar = totalVolume * sugarConc / 1000; // in grams but make sure to correct for volume in sugarConc
-            const sugarVolume_mL = (totalSugar * sugarDensity).toFixed(2); // in milliliters
-            const waterVol_mL = (totalVolume - everclearVol_mL - sugarVolume_mL).toFixed(2);
+            const sugarVolume_mL = (totalSugar * sugarDensity); // in milliliters
+            const waterVol_mL = (totalVolume - everclearVol_mL - sugarVolume_mL);
         
             // Output
-            document.getElementById('everclearVol').textContent = everclearVol_mL + ' mL';
+            document.getElementById('everclearVol').textContent = everclearVol_mL.toFixed(2) + ' mL';
             document.getElementById('lemons').textContent = lemons;
-            document.getElementById('waterVol').textContent = waterVol_mL + ' mL';
+            document.getElementById('waterVol').textContent = waterVol_mL.toFixed(2) + ' mL';
             document.getElementById('totalSugar').textContent = Math.round(totalSugar) + ' g';
         }
         
