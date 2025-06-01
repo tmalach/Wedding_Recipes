@@ -272,28 +272,6 @@
         &copy; 2025 Tom and Lily Malachowski. All rights reserved.
     </footer>
     <script>
-        // Ingredient scaling logic for both main and alternative units
-        const scalorInput = document.getElementById('scalor');
-        const qtySpans = document.querySelectorAll('.qty');
-        const altQtySpans = document.querySelectorAll('.alt-qty');
-
-        function updateQuantities() {
-            const scalor = parseFloat(scalorInput.value) || 1;
-            qtySpans.forEach(span => {
-                const base = parseFloat(span.getAttribute('data-base'));
-                let scaled = base * scalor;
-                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
-            });
-            altQtySpans.forEach(span => {
-                const base = parseFloat(span.getAttribute('data-alt-base'));
-                let scaled = base * scalor;
-                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
-            });
-        }
-
-        scalorInput.addEventListener('input', updateQuantities);
-        // Initialize on page load
-        updateQuantities();
         function updateLimoncelloTable() {
             // Inputs
             const totalVolume = parseFloat(document.getElementById('totalVolume').value) || 1000; // in mL
