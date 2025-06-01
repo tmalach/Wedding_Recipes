@@ -17,6 +17,71 @@
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
+        /* Basic styling for the nav bar */
+        nav {
+            background: #f4e2d8;
+            padding: 0.5em 1em;
+            font-family: sans-serif;
+            position: relative;
+        }
+        
+        /* Hide the dropdown content by default */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #fffbe7;
+            min-width: 180px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+            z-index: 1;
+            margin-top: 0.5em;
+            border-radius: 8px;
+        }
+        
+        /* Show the dropdown on hover */
+        .dropdown:hover .dropdown-content,
+        .dropdown:focus-within .dropdown-content {
+            display: block;
+        }
+        
+        /* Dropdown button/link styling */
+        .dropbtn {
+            background: none;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+            padding: 0.5em 1em;
+            color: #bfa700;
+            font-weight: bold;
+        }
+        
+        /* Dropdown links */
+        .dropdown-content a {
+            display: block;
+            padding: 0.7em 1em;
+            color: #2c3e50;
+            text-decoration: none;
+            border-bottom: 1px solid #f4e2d8;
+            transition: background 0.2s;
+        }
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+        .dropdown-content a:hover {
+            background: #f4e2d8;
+            color: #bfa700;
+        }
+        
+        /* Home link styling */
+        nav > a {
+            padding: 0.5em 1em;
+            color: #bfa700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav > a:hover {
+            background: #fffbe7;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -25,18 +90,28 @@
     </header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="Penne_al_Baffo.html">Penne al Baffo</a>
-        <a href="recipe2.html">Recipe 2</a>
-        <a href="recipe3.html">Recipe 3</a>
-        <a href="recipe4.html">Recipe 4</a>
-        <a href="recipe5.html">Recipe 5</a>
-        <a href="recipe6.html">Recipe 6</a>
-        <a href="recipe7.html">Recipe 7</a>
-        <a href="recipe8.html">Recipe 8</a>
-        <a href="recipe9.html">Recipe 9</a>
-        <a href="recipe10.html">Recipe 10</a>
-        <a href="Bonus.html">Bonus</a>
-        <a href="Bonus2.html">Bonus2</a>
+        <div class="dropdown" style="display:inline-block;">
+            <button class="dropbtn">Recipes &#9662;</button>
+            <div class="dropdown-content">
+                <a href="Penne_al_Baffo.html">Penne al Baffo</a>
+                <a href="recipe2.html">Recipe 2</a>
+                <a href="recipe3.html">Recipe 3</a>
+                <a href="recipe4.html">Recipe 4</a>
+                <a href="recipe5.html">Recipe 5</a>
+                <a href="recipe6.html">Recipe 6</a>
+                <a href="recipe7.html">Recipe 7</a>
+                <a href="recipe8.html">Recipe 8</a>
+                <a href="recipe9.html">Recipe 9</a>
+                <a href="recipe10.html">Recipe 10</a>
+            </div>
+        </div>
+        <div class="dropdown" style="display:inline-block;">
+            <button class="dropbtn">Bonus &#9662;</button>
+            <div class="dropdown-content">
+                <a href="Bonus.html">Bonus</a>
+                <a href="Bonus2.html">Bonus2</a>
+            </div>
+        </div>
     </nav>
 
     <div class="container">
