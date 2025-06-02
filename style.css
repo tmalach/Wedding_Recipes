@@ -48,6 +48,7 @@ nav > a:hover {
 .dropdown:hover .dropdown-content,
 .dropdown:focus-within .dropdown-content {
     display: block;
+    border-radius: 8px;
 }
 .dropdown {
 display: inline-block;
