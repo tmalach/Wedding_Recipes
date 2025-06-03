@@ -48,7 +48,6 @@ nav > a:hover {
 .dropdown:hover .dropdown-content,
 .dropdown:focus-within .dropdown-content {
     display: block;
-    border-radius: 8px;
 }
 .dropdown {
 display: inline-block;
@@ -74,12 +73,20 @@ position: relative;
     border-bottom: 1px solid #f4e2d8;
     transition: background 0.2s;
 }
+.dropdown-content a:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
 .dropdown-content a:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-bottom: none;
 }
 .dropdown-content a:hover {
     background: #fffbe7;
     color: #bfa700;
+    border-bottom: 2px solid #000; /* Solid black underline */
 }
 /* Basic styling for the nav bar */
 .container {
