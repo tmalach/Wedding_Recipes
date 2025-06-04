@@ -17,6 +17,9 @@ header {
     padding: 0.75rem 0;
     text-align: center;
 }
+header h4 {
+  margin: 0rem;
+}
 header h1 {
     font-family: 'Tangerine', cursive;
 }
