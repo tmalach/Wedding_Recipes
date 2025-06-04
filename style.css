@@ -140,9 +140,11 @@ position: relative;
     margin-right: 0.6em;
     accent-color: #333;
 }
-li strong {
-  margin-bottom: 0.75em !important;
+ol strong {
+  display: block;
+  margin-bottom: 0.75em; /* or any value you prefer, e.g., 16px */
 }
+
 li {
   margin-bottom: 0.75em;
 }
