@@ -17,7 +17,7 @@ header {
     padding: 1rem 0;
     text-align: center;
 }
-h1 {
+header h1 {
     font-family: 'Tangerine', cursive;
 }
 nav {
