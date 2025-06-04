@@ -17,12 +17,12 @@ header {
     padding: 0.75rem 0;
     text-align: center;
 }
-header h4 {
-  margin: 0rem;
-}
 header h1 {
     font-family: 'Tangerine', cursive;
     margin: 0rem;
+}
+header h4 {
+  margin: 0rem;
 }
 nav {
     background: #333;
@@ -137,7 +137,7 @@ position: relative;
     margin-right: 0.6em;
     accent-color: #333;
 }
-.ul {
+ul {
   margin-bottom: 0.5em;
 }
 footer {
