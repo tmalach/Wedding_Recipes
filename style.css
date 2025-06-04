@@ -138,7 +138,7 @@ position: relative;
     accent-color: #333;
 }
 strong {
-  margin-bottom: 1em;
+  padding: 0 0 1em;
 }
 li {
   margin-bottom: 0.75em;
