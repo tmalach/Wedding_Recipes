@@ -144,7 +144,9 @@ ol strong {
   display: block;
   margin-bottom: 0.75em; /* or any value you prefer, e.g., 16px */
 }
-
+ol li::marker {
+  font-weight: bold;
+}
 li {
   margin-bottom: 0.75em;
 }
