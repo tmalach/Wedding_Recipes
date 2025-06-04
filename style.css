@@ -138,7 +138,7 @@ position: relative;
     accent-color: #333;
 }
 ol strong {
-  margin-bottom: 0.75em;
+  margin-bottom: 0.75em !important;
 }
 li {
   margin-bottom: 0.75em;
