@@ -137,11 +137,9 @@ position: relative;
     margin-right: 0.6em;
     accent-color: #333;
 }
-ol {
-  margin-bottom: 0.5em;
-}
 li {
-  margin-bottom: 0.5em;
+  margin-top: 0.25em
+  margin-bottom: 0.25em;
 }
 footer {
     text-align: center;
