@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Italian Penicillin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/Wedding_Recipes/Pictures/favicon.ico" />
+    <style>
+        .checkbox-list {
+            list-style: none;
+            padding: 0;
+        }
+        .checkbox-list li {
+            margin-bottom: 0.5em;
+            font-size: 1.1em;
+        }
+        .checkbox-list input[type="checkbox"] {
+            transform: scale(1.2);
+            margin-right: 0.6em;
+            accent-color: #333;
+        }
+        .scaling-input {
+            margin: 1em 0;
+            font-size: 1.1em;
+        }
+        .scaling-input input {
+            width: 3em;
+            font-size: 1em;
+            text-align: right;
+        }
+        .alt-unit {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lily and Tom's Wedding Recipes</h1>
+        <h5>June 22nd, 2025</h5>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <div class="dropdown" style="display:inline-block;">
+            <button class="dropbtn" tabindex="0">Recipes &#9662;</button>
+            <div class="dropdown-content">
+                <a href="Creamy_Tortellini_Soup.html">Creamy Tortellini Soup</a>
+                <a href="Dottie’s_Skirt_Steak.html">Dottie’s Skirt Steak</a>
+                <a href="French_Onion_Chicken_and_Gnocchi.html">French Onion Chicken and Gnocchi</a>
+                <a href="Garlic_Hummus.html">Garlic Hummus</a>
+                <a href="Irish_Cream_Coffee_Cake.html">Irish Cream Coffee Cake</a>
+                <a href="Italian_Penicillin.html">Italian Penicillin</a>
+                <a href="Pearl_Couscous_With_Feta_and_Chickpeas.html">Pearl Couscous With Feta and Chickpeas</a>
+                <a href="Penne_al_Baffo.html">Penne al Baffo</a>
+                <a href="Shrimp_Ajillo.html">Shrimp Ajillo</a>
+                <a href="White_Bean_Salad_With_Crispy_Cheese.html">White Bean Salad With Crispy Cheese</a>
+            </div>
+        </div>
+        <div class="dropdown" style="display:inline-block;">
+            <button class="dropbtn" tabindex="0">Bonus &#9662;</button>
+            <div class="dropdown-content">
+                <a href="Crema_di_Limoncello.html">Crema di Limoncello</a>
+                <a href="Limoncello.html">Limoncello</a>
+                <a href="Remi_Pot_Pie.html">Remi Pot Pie</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Italian Penicillin</h2>
+        <img src="https://images.unsplash.com/photo-1637949385162-e416fb15b2ce?auto=format&fit=crop&w=800&q=80"
+             alt="Italian Penicillin"
+             style="display:block; margin: 1.5rem auto; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+        
+        <div class="scaling-input">
+            <label for="scalor">Scale ingredients by: </label>
+            <input type="number" id="scalor" value="1" min="0.1" step="0.1">
+            <span>(e.g., 2 for double, 0.5 for half)</span>
+        </div>
+
+<h3>Ingredients</h3>
+<ul class="checkbox-list" id="ingredients-list">
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="4">4</span> tablespoons
+            (<span class="alt-qty" data-alt-base="60">60</span>ml) olive oil
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="2">2</span> pounds
+            (<span class="alt-qty" data-alt-base="900">900</span>g) chicken thighs, bone-in
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="3">3</span> medium carrots (~<span class="alt-qty" data-alt-base="200">200</span>g), peeled and roughly chopped
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="3">3</span> celery stalks (~<span class="alt-qty" data-alt-base="150">150</span>g), roughly chopped
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="8">8</span> cups chicken broth (about <span class="alt-qty" data-alt-base="2000">2,000</span>ml or 2 liters)
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="2">2</span> medium white onions (~<span class="alt-qty" data-alt-base="325">325</span>g), halved or quartered
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> garlic bulb, whole cloves, wrapped in a cheesecloth bundle
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="2">2</span> Parmesan rinds
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> teaspoon dried oregano
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> teaspoon dried basil
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="0.5">½</span> teaspoon dried thyme
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> teaspoon red pepper flakes, optional
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            Salt (<span class="qty" data-base="0.5">½</span>–<span class="qty" data-base="0.75">¾</span> teaspoon) and freshly ground black pepper, to taste
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="2">2</span> cups
+            (<span class="alt-qty" data-alt-base="480">480</span>ml) cold water
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="alt-qty" data-alt-base="225">225</span>g orecchiette
+        </label>
+    </li>
+</ul>
+
+<h3>Instructions</h3>
+<ol>
+    <li>
+        <strong>Sauté Chicken Thighs:</strong>
+        <ul>
+            <li>Heat half the olive oil in a large pot over medium-high heat.</li>
+            <li>Season the chicken thighs with salt and pepper. Add chicken thighs to the pot and cook until each side is golden brown, about 4 minutes each side. Set chicken thighs aside.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Sauté Vegetables:</strong>
+        <ul>
+            <li>Add the rest of the olive oil in a large pot over medium heat. Add the carrots and celery and sauté until the vegetables are caramelized on the outside, about 5–7 minutes. Optionally, sauté onion with celery and carrots.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Create the Soup Base:</strong>
+        <ul>
+            <li>Add the chicken broth, bone-in chicken, onions, garlic, and parmesan rinds to the pot. The garlic wrapped in cheesecloth will help recover all the cloves before blending.</li>
+            <li>Add the oregano, basil, thyme, and red pepper flakes. Add salt and pepper to taste—do not over salt as the soup will reduce. Stir the soup to mix ingredients.</li>
+            <li>Once boiling, reduce heat to a simmer, cover, and cook for about 30–45 minutes until the vegetables are very tender.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Shred Chicken and Purée Vegetables:</strong>
+        <ul>
+            <li>Using a slotted spoon, remove the chicken from the pot. Strip the meat from the bone and shred the meat. Be careful when removing the meat as non-edible parts from the bone may fall off.</li>
+            <li>Using a slotted spoon, transfer the carrots, celery, onion, and garlic to a blender. Add 2 cups of cold water to help purée the vegetables. The water will help cool the mixture but be very careful when blending as it could explode if the mixture is too hot.</li>
+            <li>Using the slotted spoon, remove and discard the parmesan rinds.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Finish Soup:</strong>
+        <ul>
+            <li>Add the vegetable mixture and shredded chicken back to the pot.</li>
+            <li>Simmer for 5–10 minutes to allow the flavors to meld. Finish with any desired seasonings.</li>
+            <li>Cook orecchiette in a separate pot as desired. Salt the water with 1 tablespoon salt per 2 quarts of water. Do not add pasta to the soup as it will disintegrate when re-heated.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Serve:</strong>
+        <ul>
+            <li>Ladle the soup into bowls, add pasta, and garnish with fresh parsley or basil. Serve hot.</li>
+            <li>Top with grated Parmesan cheese until melted and well combined.</li>
+        </ul>
+    </li>
+</ol>
+
+<h3>Tips</h3>
+<ul class="tips-list">
+    <li><strong>Homemade Broth:</strong> Whenever possible, use homemade chicken broth. It adds a richer and more authentic flavor to the soup. To make homemade broth, simmer chicken bones with onions, carrots, celery, garlic, and herbs for several hours.</li>
+    <li><strong>Pre-cook the Chicken:</strong> Using pre-cooked chicken, such as a rotisserie chicken, saves time and adds flavor. Alternatively, poach chicken breasts or thighs in the broth for a more cohesive flavor.</li>
+    <li><strong>Sauté Vegetables Properly:</strong> Ensure the vegetables are sautéed until they are soft and slightly caramelized. This step enhances the overall flavor of the soup.</li>
+    <li><strong>Season Gradually:</strong> Add salt and pepper gradually and taste as you go. This helps you avoid over-seasoning and allows the flavors to develop properly.</li>
+    <li><strong>Cook Pasta Separately:</strong> Consider cooking the pasta separately and adding it to individual bowls when serving. This prevents the pasta from becoming mushy if the soup is stored and reheated.</li>
+    <li><strong>Add Fresh Herbs Last:</strong> Fresh herbs like parsley or basil should be added just before serving to maintain their bright flavor and color.</li>
+    <li><strong>Customize Vegetables:</strong> Feel free to add other vegetables like spinach, zucchini, or peas. These can add extra nutrition and flavor to the soup.</li>
+    <li><strong>Cheese for Garnish:</strong> Parmesan cheese is traditional, but you can also use Pecorino Romano for a sharper taste. Grate the cheese fresh for the best flavor.</li>
+    <li><strong>Lemon Juice for Brightness:</strong> A squeeze of fresh lemon juice can brighten the flavors and add a subtle tanginess to the soup.</li>
+    <li><strong>Storing and Reheating:</strong> Store leftovers in an airtight container in the refrigerator for up to 3 days. When reheating, do so gently on the stove or in the microwave to avoid overcooking the pasta and vegetables.</li>
+    <li><strong>Balance Flavors:</strong> Taste the soup before serving and adjust the seasoning. If the soup tastes too acidic due to the tomatoes, you can add a pinch of sugar to balance it out.</li>
+    <li><strong>Texture Variation:</strong> For a creamier texture, you can blend a portion of the soup before adding the pasta. This creates a thicker base without the need for cream.</li>
+</ul>
+
+    <footer>
+        &copy; 2025 Tom and Lily Malachowski. All rights reserved.
+    </footer>
+    <script>
+        // Ingredient scaling logic for both main and alternative units
+        const scalorInput = document.getElementById('scalor');
+        const qtySpans = document.querySelectorAll('.qty');
+        const altQtySpans = document.querySelectorAll('.alt-qty');
+
+        function updateQuantities() {
+            const scalor = parseFloat(scalorInput.value) || 1;
+            qtySpans.forEach(span => {
+                const base = parseFloat(span.getAttribute('data-base'));
+                let scaled = base * scalor;
+                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+            });
+            altQtySpans.forEach(span => {
+                const base = parseFloat(span.getAttribute('data-alt-base'));
+                let scaled = base * scalor;
+                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+            });
+        }
+
+        scalorInput.addEventListener('input', updateQuantities);
+        // Initialize on page load
+        updateQuantities();
+    </script>
+</body>
+</html>
