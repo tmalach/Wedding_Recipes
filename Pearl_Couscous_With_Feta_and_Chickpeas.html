@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pearl Couscous With Feta and Chickpeas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/Wedding_Recipes/Pictures/favicon.ico" />
+    <style>
+        .checkbox-list {
+            list-style: none;
+            padding: 0;
+        }
+        .checkbox-list li {
+            margin-bottom: 0.5em;
+            font-size: 1.1em;
+        }
+        .checkbox-list input[type="checkbox"] {
+            transform: scale(1.2);
+            margin-right: 0.6em;
+            accent-color: #333;
+        }
+        .scaling-input {
+            margin: 1em 0;
+            font-size: 1.1em;
+        }
+        .scaling-input input {
+            width: 3em;
+            font-size: 1em;
+            text-align: right;
+        }
+        .alt-unit {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lily and Tom's Wedding Recipes</h1>
+        <h5>June 22nd, 2025</h5>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <div class="dropdown" style="display:inline-block;">
+            <button class="dropbtn" tabindex="0">Recipes &#9662;</button>
+            <div class="dropdown-content">
+                <a href="Creamy_Tortellini_Soup.html">Creamy Tortellini Soup</a>
+                <a href="Dottie’s_Skirt_Steak.html">Dottie’s Skirt Steak</a>
+                <a href="French_Onion_Chicken_and_Gnocchi.html">French Onion Chicken and Gnocchi</a>
+                <a href="Garlic_Hummus.html">Garlic Hummus</a>
+                <a href="Irish_Cream_Coffee_Cake.html">Irish Cream Coffee Cake</a>
+                <a href="Italian_Penicillin.html">Italian Penicillin</a>
+                <a href="Pearl_Couscous_With_Feta_and_Chickpeas.html">Pearl Couscous With Feta and Chickpeas</a>
+                <a href="Penne_al_Baffo.html">Penne al Baffo</a>
+                <a href="Shrimp_Ajillo.html">Shrimp Ajillo</a>
+                <a href="White_Bean_Salad_With_Crispy_Cheese.html">White Bean Salad With Crispy Cheese</a>
+            </div>
+        </div>
+        <div class="dropdown" style="display:inline-block;">
+            <button class="dropbtn" tabindex="0">Bonus &#9662;</button>
+            <div class="dropdown-content">
+                <a href="Crema_di_Limoncello.html">Crema di Limoncello</a>
+                <a href="Limoncello.html">Limoncello</a>
+                <a href="Remi_Pot_Pie.html">Remi Pot Pie</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Pearl Couscous With Feta and Chickpeas</h2>
+        <img src="https://images.unsplash.com/photo-1637949385162-e416fb15b2ce?auto=format&fit=crop&w=800&q=80"
+             alt="Pearl Couscous With Feta and Chickpeas"
+             style="display:block; margin: 1.5rem auto; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+        
+        <div class="scaling-input">
+            <label for="scalor">Scale ingredients by: </label>
+            <input type="number" id="scalor" value="1" min="0.1" step="0.1">
+            <span>(e.g., 2 for double, 0.5 for half)</span>
+        </div>
+
+<h3>Ingredients</h3>
+<ul class="checkbox-list" id="ingredients-list">
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1.5">1.5</span>–<span class="qty" data-base="2">2</span> pounds
+            (<span class="alt-qty" data-alt-base="680">680</span>–<span class="alt-qty" data-alt-base="900">900</span>g) skinless, boneless chicken breast
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> pint (10 oz) cherry tomatoes, halved
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="0.5">½</span> cup
+            (<span class="alt-qty" data-alt-base="22">22</span>g) diced chives
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="4">4</span> tablespoons
+            (<span class="alt-qty" data-alt-base="60">60</span>ml) olive oil, plus more for drizzling
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> tablespoon
+            (<span class="alt-qty" data-alt-base="15">15</span>ml) balsamic vinegar, plus more for serving
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="6">6</span> garlic cloves, finely grated or minced
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1.5">1½</span> teaspoons kosher salt, plus more as needed
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="0.5">½</span> teaspoon black pepper, plus more for serving
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1.5">1½</span> teaspoons oregano
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="2">2</span> cups
+            (<span class="alt-qty" data-alt-base="480">480</span>ml) chicken stock
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> cup
+            (<span class="alt-qty" data-alt-base="22">22</span>g) chopped cilantro
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> teaspoon
+            (<span class="alt-qty" data-alt-base="5">5</span>ml) lemon juice
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="0.75">¾</span> teaspoon ground cumin
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1.5">1½</span> cups
+            (<span class="alt-qty" data-alt-base="225">225</span>–<span class="alt-qty" data-alt-base="240">240</span>g) pearl couscous
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> can (15 ounces) chickpeas, drained and rinsed
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="0.75">¾</span> cup
+            (<span class="alt-qty" data-alt-base="170">170</span>g) Kalamata olives, halved, rinsed
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> cup
+            (<span class="alt-qty" data-alt-base="170">170</span>g) feta, crumbled
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="0.33">⅓</span> cup
+            (<span class="alt-qty" data-alt-base="27">27</span>g) freshly grated Parmesan
+        </label>
+    </li>
+</ul>
+
+<h3>Instructions</h3>
+<ol>
+    <li>
+        <strong>Prep the Chicken</strong>
+        <ul>
+            <li>Preheat oven to 450°F (232°C).</li>
+            <li>Pound chicken breasts to 3–6 mm (⅛ to ¼ inch) thick for quick, even cooking.</li>
+            <li>Pat chicken dry with paper towels, then season generously with salt and black pepper.</li>
+            <li>Let chicken rest at room temperature for 30 minutes if time allows.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Cook the Chicken</strong>
+        <ul>
+            <li>In a large skillet, heat 2 tablespoons (30 ml) olive oil over medium-high heat.</li>
+            <li>Cook chicken for 4–6 minutes per side, or until golden brown and cooked through.</li>
+            <li>Transfer to a plate and keep warm. Work in batches if needed to avoid crowding the pan.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Roast the Tomatoes</strong>
+        <ul>
+            <li>In a 3-quart (2.8 L) baking dish, combine cherry tomatoes, chopped chives, 2 tablespoons (30 ml) olive oil, balsamic vinegar, garlic, ½ teaspoon salt, black pepper, and oregano.</li>
+            <li>Roast in preheated oven for 8–12 minutes, or until tomatoes are soft and begin to burst. Use the “potato test”: a knife should slide through with little resistance.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Prepare the Stock Mixture</strong>
+        <ul>
+            <li>In the same skillet used for the chicken, pour in the chicken stock and bring to a boil.</li>
+            <li>Deglaze the pan by scraping up the browned bits. Stir in 1 teaspoon salt, fresh chopped cilantro, lemon juice, and cumin.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Assemble and Bake the Casserole</strong>
+        <ul>
+            <li>Remove baking dish from the oven. Add couscous and chickpeas to the roasted tomatoes.</li>
+            <li>Pour the hot seasoned chicken stock over the mixture and stir gently.</li>
+            <li>Cover the dish tightly with foil and bake for 20 minutes.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Add Chicken and Cheese</strong>
+        <ul>
+            <li>While the couscous bakes, slice the cooked chicken into strips.</li>
+            <li>After 20 minutes, remove the foil from the baking dish. Stir in ¾ of the feta, grated Parmesan or Asiago, sliced chicken, and olives.</li>
+            <li>Return to the oven and bake uncovered for 5–10 minutes, or until the cheese is soft and melty.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Serve</strong>
+        <ul>
+            <li>Serve warm, topped with the remaining feta, additional herbs (such as parsley or basil), or more Parmesan if desired.</li>
+        </ul>
+    </li>
+</ol>
+
+<h3>Tips</h3>
+<ul class="tips-list">
+    <li><strong>Feta Quality:</strong> Use high-quality feta stored in brine for the best flavor and creaminess when melted.</li>
+    <li><strong>Couscous Type:</strong> Pearl couscous is also labeled as Israeli or Palestinian couscous — all work well in this dish.</li>
+    <li><strong>Broth Substitution:</strong> Use vegetable or chicken broth instead of water to deepen the flavor of the couscous.</li>
+    <li><strong>Protein Swap:</strong> Shrimp can be used instead of chicken for a lighter protein. Add it during the last 10 minutes of baking.</li>
+    <li><strong>Grain Alternative:</strong> Orzo can be substituted for couscous. Add an additional 5 minutes to the baking time if using.</li>
+    <li><strong>Avoid Overcrowding:</strong> Don’t overcrowd the baking dish; this ensures better browning and caramelization of the tomatoes and scallions.</li>
+    <li><strong>Pre-Tossing:</strong> Toss vegetables with oil, vinegar, and seasonings before roasting to infuse flavor throughout.</li>
+    <li><strong>High Heat Roasting:</strong> Roast at a high temperature (232°C / 450°F) for concentrated flavor and color.</li>
+    <li><strong>Add Greens:</strong> Stir in kale, spinach, or Swiss chard for a boost of nutrition and texture.</li>
+    <li><strong>Boiling Broth First:</strong> Bring the broth to a full boil before adding it to the baking dish for better heat distribution.</li>
+    <li><strong>Steam Tightly:</strong> Cover the dish tightly with foil to ensure the couscous steams properly and cooks evenly.</li>
+    <li><strong>Fluffing:</strong> Fluff the couscous with a fork after baking to separate grains and prevent clumping.</li>
+    <li><strong>Fresh Feta Finish:</strong> Reserve a portion of the feta to crumble on top before serving for a fresh, tangy finish.</li>
+    <li><strong>Melty Cheese Note:</strong> Parmesan or Asiago offer a salty, nutty layer of richness when stirred in during the final bake.</li>
+    <li><strong>Resting Time:</strong> Let the dish rest for 5 minutes after baking so the cheese melts evenly and flavors settle.</li>
+    <li><strong>Herb Garnish:</strong> Sprinkle with fresh parsley, cilantro, or mint for a burst of color and herbal brightness.</li>
+    <li><strong>Final Touch:</strong> A drizzle of quality olive oil and balsamic vinegar adds depth and richness just before serving. Finely grated lemon zest adds a subtle citrus flavor and brightens up the dish. Use a microplane grater to zest the lemon for the best results.</li>
+    <li><strong>Best Temperature:</strong> Serve warm while the feta is still soft and creamy for the best texture and flavor.</li>
+</ul>
+
+    <footer>
+        &copy; 2025 Tom and Lily Malachowski. All rights reserved.
+    </footer>
+    <script>
+        // Ingredient scaling logic for both main and alternative units
+        const scalorInput = document.getElementById('scalor');
+        const qtySpans = document.querySelectorAll('.qty');
+        const altQtySpans = document.querySelectorAll('.alt-qty');
+
+        function updateQuantities() {
+            const scalor = parseFloat(scalorInput.value) || 1;
+            qtySpans.forEach(span => {
+                const base = parseFloat(span.getAttribute('data-base'));
+                let scaled = base * scalor;
+                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+            });
+            altQtySpans.forEach(span => {
+                const base = parseFloat(span.getAttribute('data-alt-base'));
+                let scaled = base * scalor;
+                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+            });
+        }
+
+        scalorInput.addEventListener('input', updateQuantities);
+        // Initialize on page load
+        updateQuantities();
+    </script>
+</body>
+</html>
