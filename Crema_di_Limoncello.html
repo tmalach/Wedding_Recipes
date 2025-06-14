@@ -83,7 +83,7 @@
     </nav>
     <div class="container">
         <h2>Crema di Limoncello</h2>
-        <img src="https://images.unsplash.com/photo-1622575464646-c3c26ee5a3db?auto=format&fit=crop&w=800&q=80"
+        <img src="/Wedding_Recipes/Pictures/Crema_di_Limoncello.png"
              alt="Crema di Limoncello - freshing, sweet digestif"
              style="display:block; margin: 1.5rem auto; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
         
@@ -118,7 +118,7 @@
             </tr>
             <tr>
                 <td>Everclear</td>
-                <td class="limoncello-result" id="everclearVol">347 mL</td>
+                <td class="limoncello-result" id="everclearVol">347ml</td>
             </tr>
             <tr>
                 <td>Lemons</td>
@@ -126,20 +126,21 @@
             </tr>
             <tr>
                 <td>Milk</td>
-                <td class="limoncello-result" id="milkVol">475 mL</td>
+                <td class="limoncello-result" id="milkVol">475ml</td>
             </tr>
             <tr>
                 <td>Total Sugar</td>
-                <td class="limoncello-result" id="totalSugar">277g (277ml)</td>
+                <td class="limoncello-result" id="totalSugar">277g (178ml)</td>
             </tr>
             <tr>
                 <td>Vanilla Extract</td>
-                <td class="limoncello-result" id="vanillaExtract">0.212 teaspoon</td>
+                <td class="limoncello-result" id="vanillaExtract">0.25 teaspoon</td>
             </tr>
         </table>
         <table class="limoncello-table" style="margin-top:1.5rem;">
             <tr>
                 <th>Notes</th>
+                <th> </th>
             </tr>
             <tr>
                 <td>Milk Density</td>
@@ -215,6 +216,8 @@
         
             // Constants
             const sugarDensity = 0.641025641; // ml per gram of sugar empirically determined
+            const milkDensity = 1.03; // g per ml of milk empirically determined
+            const everclearDensity = 0.84; // g per ml of Everclear empirically determined
         
             // Calculations (all in liters first)
             const everclearVol_mL = (totalVolume * finalABV / everclearABV);
@@ -223,12 +226,14 @@
             const sugarVolume_mL = (totalSugar * sugarDensity); // in milliliters
             const milkVol_mL = (totalVolume - everclearVol_mL - sugarVolume_mL);
             const totalVanillaExtract = (totalVolume * 0.25 / 1000) ;
+            const milkWeight = (milkVol_mL * milkDensity)
+            const everclearWeight = (everclearVol_mL * everclearDensity)
         
             // Output
-            document.getElementById('everclearVol').textContent = Math.round(everclearVol_mL) + ' mL';
+            document.getElementById('everclearVol').textContent = Math.round(everclearVol_mL) + 'ml' + ' (' + Math.round(everclearWeight) + 'g)';
             document.getElementById('lemons').textContent = lemons;
-            document.getElementById('milkVol').textContent = Math.round(milkVol_mL) + ' mL';
-            document.getElementById('totalSugar').textContent = Math.round(totalSugar) + 'g' + '(' + Math.round(sugarVolume_mL) + ' mL)';
+            document.getElementById('milkVol').textContent = Math.round(milkVol_mL) + 'ml' + ' (' + Math.round(milkWeight) + 'g)';
+            document.getElementById('totalSugar').textContent = Math.round(totalSugar) + 'g' + ' (' + Math.round(sugarVolume_mL) + 'ml)';
             document.getElementById('vanillaExtract').textContent = +totalVanillaExtract.toFixed(3) + ' teaspoon(s)';
         }
         
