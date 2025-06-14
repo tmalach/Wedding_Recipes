@@ -130,8 +130,7 @@
             </tr>
             <tr>
                 <td>Total Sugar</td>
-                <td class="limoncello-result" id="totalSugar">277 g</td>
-                <td class="limoncello-result" id="totalSugar_ml">(277 g)</td>
+                <td class="limoncello-result" id="totalSugar">277g (277ml)</td>
             </tr>
             <tr>
                 <td>Vanilla Extract</td>
@@ -229,8 +228,7 @@
             document.getElementById('everclearVol').textContent = Math.round(everclearVol_mL) + ' mL';
             document.getElementById('lemons').textContent = lemons;
             document.getElementById('milkVol').textContent = Math.round(milkVol_mL) + ' mL';
-            document.getElementById('totalSugar').textContent = Math.round(totalSugar) + ' g';
-            document.getElementById('totalSugar_mL').textContent = '(' + Math.round(totalSugar_mL) + ' mL)';
+            document.getElementById('totalSugar').textContent = Math.round(totalSugar) + 'g' + '(' + Math.round(totalSugar_mL) + ' mL)';
             document.getElementById('vanillaExtract').textContent = +totalVanillaExtract.toFixed(3) + ' teaspoon(s)';
         }
         
