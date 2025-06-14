@@ -297,7 +297,7 @@
         
             // Calculations (all in liters first)
             const everclearVol_mL = (totalVolume * finalABV / everclearABV);
-            const lemons = Math.ceil(everclearVol_mL * 10 / 1250 * 410); // 10 lemons originally steeped in 1250 mL, then used 410 mL originally
+            const lemons = Math.ceil(everclearVol_mL * 10 / 1250); // 10 lemons originally steeped in 1250 mL, then used 410 mL originally
             const totalSugar = totalVolume * sugarConc / 1000; // in grams but make sure to correct for volume in sugarConc
             const sugarVolume_mL = (totalSugar * sugarDensity); // in milliliters
             const waterVol_mL = (totalVolume - everclearVol_mL - sugarVolume_mL);
