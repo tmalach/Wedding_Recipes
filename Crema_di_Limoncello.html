@@ -126,7 +126,7 @@
             </tr>
             <tr>
                 <td>Final ABV of Crema di Limoncello (%)</td>
-                <td><input type="number" id="finalABV" value="26.0" min="5" max="50" step="0.5"></td>
+                <td><input type="number" id="finalABV" value="26.2" min="5" max="50" step="0.1"></td>
             </tr>
             <tr>
                 <td>Final Sugar Concentration (g/L)</td>
@@ -289,7 +289,7 @@
             // Inputs
             const totalVolume = parseFloat(document.getElementById('totalVolume').value) || 1000; // in mL
             const everclearABV = parseFloat(document.getElementById('everclearABV').value) || 75.5;
-            const finalABV = parseFloat(document.getElementById('finalABV').value) || 26.0;
+            const finalABV = parseFloat(document.getElementById('finalABV').value) || 26.2;
             const sugarConc = parseFloat(document.getElementById('sugarConc').value) || 277;
         
             // Constants
@@ -297,7 +297,7 @@
         
             // Calculations (all in liters first)
             const everclearVol_mL = (totalVolume * finalABV / everclearABV);
-            const lemons = Math.ceil(everclearVol_mL * 10 / 833);
+            const lemons = Math.ceil(everclearVol_mL * 10 / 416); // 416 represents the arbitrary value used when making this
             const totalSugar = totalVolume * sugarConc / 1000; // in grams but make sure to correct for volume in sugarConc
             const sugarVolume_mL = (totalSugar * sugarDensity); // in milliliters
             const waterVol_mL = (totalVolume - everclearVol_mL - sugarVolume_mL);
