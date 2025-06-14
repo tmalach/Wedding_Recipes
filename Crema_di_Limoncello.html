@@ -219,9 +219,9 @@
             // Calculations (all in liters first)
             const everclearVol_mL = (totalVolume * finalABV / everclearABV);
             const lemons = Math.ceil(everclearVol_mL * 40 / 3500); // 10 lemons originally steeped in 1250 mL, then used 410 mL originally
-            const milkVol_mL = (totalVolume - everclearVol_mL - sugarVolume_mL);
             const totalSugar = totalVolume * sugarConc / 1000; // in grams but make sure to correct for volume in sugarConc
             const sugarVolume_mL = (totalSugar * sugarDensity); // in milliliters
+            const milkVol_mL = (totalVolume - everclearVol_mL - sugarVolume_mL);
             const totalVanillaExtract = (totalVolume * 0.25 / 1000) ;
         
             // Output
