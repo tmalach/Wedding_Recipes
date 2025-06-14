@@ -6,28 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/Wedding_Recipes/Pictures/favicon.ico" />
     <style>
-        .checkbox-list {
-            list-style: none;
-            padding: 0;
-        }
-        .checkbox-list li {
-            margin-bottom: 0.5em;
-            font-size: 1.1em;
-        }
-        .checkbox-list input[type="checkbox"] {
-            transform: scale(1.2);
-            margin-right: 0.6em;
-            accent-color: #333;
-        }
-        .scaling-input {
-            margin: 1em 0;
-            font-size: 1.1em;
-        }
-        .scaling-input input {
-            width: 3em;
-            font-size: 1em;
-            text-align: right;
-        }
         .alt-unit {
             color: #555;
         }
@@ -140,103 +118,27 @@
             </tr>
             <tr>
                 <td>Everclear</td>
-                <td class="limoncello-result" id="everclearVol">450.33 mL</td>
+                <td class="limoncello-result" id="everclearVol">347 mL</td>
             </tr>
             <tr>
                 <td>Lemons</td>
-                <td class="limoncello-result" id="lemons">10</td>
+                <td class="limoncello-result" id="lemons">4</td>
             </tr>
             <tr>
                 <td>Milk</td>
-                <td class="limoncello-result" id="milkVol">451.67 mL</td>
+                <td class="limoncello-result" id="milkVol">475 mL</td>
             </tr>
             <tr>
                 <td>Total Sugar</td>
-                <td class="limoncello-result" id="totalSugar">200 g</td>
+                <td class="limoncello-result" id="totalSugar">277 g</td>
+            </tr>
+            <tr>
+                <td>Vanilla Extract</td>
+                <td class="limoncello-result" id="vanillaExtract">0.25 teaspoon</td>
             </tr>
         </table>
     </div>
 
-        <h3>Ingredients</h3>
-        <ul class="checkbox-list" id="ingredients-list">
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="1">1</span> pound
-                    (<span class="alt-qty" data-alt-base="450">450</span>g) penne pasta or cavatelli
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="8">8</span> ounces
-                    (<span class="alt-qty" data-alt-base="225">225</span>g) bacon, guanciale, or pancetta, cut into small cubes
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="2">2</span> tablespoons bacon or guanciale fat
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="2.5">2–3</span> shallots
-                    (<span class="alt-qty" data-alt-base="75">75</span>g), finely chopped
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="3">3</span> garlic cloves, minced
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="0.5">1/2</span> teaspoon red pepper flakes
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="0.25">1/4</span> cup dry white wine or sherry
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="14">14</span> ounces tomato passata
-                    <span class="note">(plus 1/4 cup pasta water if using the last half of the bottle)</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="0.5">1/2</span> cup heavy cream
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="0.25">1/4</span> cup
-                    (<span class="alt-qty" data-alt-base="21">21</span>g) freshly grated Parmesan cheese
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="1">1</span> tablespoon butter
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    Salt and black pepper to taste
-                </label>
-            </li>
-        </ul>
         <h3>Instructions</h3>
         <ol>
             <li>
@@ -300,17 +202,19 @@
             const lemons = Math.ceil(everclearVol_mL * 40 / 3500); // 10 lemons originally steeped in 1250 mL, then used 410 mL originally
             const totalSugar = totalVolume * sugarConc / 1000; // in grams but make sure to correct for volume in sugarConc
             const sugarVolume_mL = (totalSugar * sugarDensity); // in milliliters
-            const waterVol_mL = (totalVolume - everclearVol_mL - sugarVolume_mL);
+            const milkVol_mL = (totalVolume - everclearVol_mL - sugarVolume_mL);
+            const totalVanillaExtract = (totalVolume * 0.25 / 1000) ;
         
             // Output
             document.getElementById('everclearVol').textContent = Math.round(everclearVol_mL) + ' mL';
             document.getElementById('lemons').textContent = lemons;
-            document.getElementById('milkVol').textContent = Math.round(waterVol_mL) + ' mL';
+            document.getElementById('milkVol').textContent = Math.round(milkVol_mL) + ' mL';
             document.getElementById('totalSugar').textContent = Math.round(totalSugar) + ' g';
+            document.getElementById('vanillaExtract').textContent = totalVanillaExtract.toFixed(3) + ' teaspoon';
         }
         
         // Set up event listeners
-        ['totalVolume', 'everclearABV', 'finalABV', 'sugarConc'].forEach(id => {
+        ['totalVolume', 'everclearABV', 'finalABV', 'sugarConc', 'vanillaExtract'].forEach(id => {
             document.getElementById(id).addEventListener('input', updateLimoncelloTable);
         });
         
