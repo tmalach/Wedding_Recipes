@@ -131,10 +131,30 @@
             <tr>
                 <td>Total Sugar</td>
                 <td class="limoncello-result" id="totalSugar">277 g</td>
+                <td class="limoncello-result" id="totalSugar_ml">(277 g)</td>
             </tr>
             <tr>
                 <td>Vanilla Extract</td>
-                <td class="limoncello-result" id="vanillaExtract">0.25 teaspoon</td>
+                <td class="limoncello-result" id="vanillaExtract">0.212 teaspoon</td>
+            </tr>
+        </table>
+        <table class="limoncello-table" style="margin-top:1.5rem;">
+            <tr>
+                <th>Notes</th>
+            </tr>
+            <tr>
+                <td>Milk Density</td>
+                <td>The density of milk should be about 1.03 g/ml.</td>
+            </tr>
+                <td>Added Volume from Dissolved Sugar</td>
+                <td>Dissolving the sugar in milk should add about 0.6-0.65 ml per gram of sugar. However, during the simmering process, the volume may be smaller than the theoretical calculation due to evaporation.</td>
+            <tr>
+                <td>Milk Syrup Density</td>
+                <td>The density of the milk syrup mixture should be about 1.43 to 1.46 g/ml. Or 1.18 to 1.2</td>
+            </tr>
+            <tr>
+                <td>Everclear Density</td>
+                <td>The density of the  infused Everclear (75.5%) should be about 0.84-0.86 g/ml. If using 95% Everclear, the density should be about 0.8-0.82 g/ml.</td>
             </tr>
         </table>
     </div>
@@ -200,9 +220,9 @@
             // Calculations (all in liters first)
             const everclearVol_mL = (totalVolume * finalABV / everclearABV);
             const lemons = Math.ceil(everclearVol_mL * 40 / 3500); // 10 lemons originally steeped in 1250 mL, then used 410 mL originally
-            const totalSugar = totalVolume * sugarConc / 1000; // in grams but make sure to correct for volume in sugarConc
-            const sugarVolume_mL = (totalSugar * sugarDensity); // in milliliters
             const milkVol_mL = (totalVolume - everclearVol_mL - sugarVolume_mL);
+            const sugarVolume_mL = (totalSugar * sugarDensity); // in milliliters
+            const totalSugar = totalVolume * sugarConc / 1000; // in grams but make sure to correct for volume in sugarConc
             const totalVanillaExtract = (totalVolume * 0.25 / 1000) ;
         
             // Output
@@ -210,7 +230,8 @@
             document.getElementById('lemons').textContent = lemons;
             document.getElementById('milkVol').textContent = Math.round(milkVol_mL) + ' mL';
             document.getElementById('totalSugar').textContent = Math.round(totalSugar) + ' g';
-            document.getElementById('vanillaExtract').textContent = totalVanillaExtract.toFixed(3) + ' teaspoon';
+            document.getElementById('totalSugar_mL').textContent = '(' + Math.round(totalSugar_mL) + ' mL)';
+            document.getElementById('vanillaExtract').textContent = +totalVanillaExtract.toFixed(3) + ' teaspoon(s)';
         }
         
         // Set up event listeners
