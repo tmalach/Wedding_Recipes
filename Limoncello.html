@@ -6,28 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/Wedding_Recipes/Pictures/favicon.ico" />
     <style>
-        .checkbox-list {
-            list-style: none;
-            padding: 0;
-        }
-        .checkbox-list li {
-            margin-bottom: 0.5em;
-            font-size: 1.1em;
-        }
-        .checkbox-list input[type="checkbox"] {
-            transform: scale(1.2);
-            margin-right: 0.6em;
-            accent-color: #333;
-        }
-        .scaling-input {
-            margin: 1em 0;
-            font-size: 1.1em;
-        }
-        .scaling-input input {
-            width: 3em;
-            font-size: 1em;
-            text-align: right;
-        }
         .alt-unit {
             color: #555;
         }
@@ -140,103 +118,43 @@
             </tr>
             <tr>
                 <td>Everclear</td>
-                <td class="limoncello-result" id="everclearVol">450.33 mL</td>
+                <td class="limoncello-result" id="everclearVol">450ml</td>
             </tr>
             <tr>
                 <td>Lemons</td>
-                <td class="limoncello-result" id="lemons">10</td>
+                <td class="limoncello-result" id="lemons">6</td>
             </tr>
             <tr>
                 <td>Water</td>
-                <td class="limoncello-result" id="waterVol">451.67 mL</td>
+                <td class="limoncello-result" id="waterVol">421ml</td>
             </tr>
             <tr>
                 <td>Total Sugar</td>
-                <td class="limoncello-result" id="totalSugar">200 g</td>
+                <td class="limoncello-result" id="totalSugar">200g</td>
+            </tr>
+        </table>
+        <table class="limoncello-table" style="margin-top:1.5rem;">
+            <tr>
+                <th>Notes</th>
+                <th> </th>
+            </tr>
+            <tr>
+                <td>Milk Density</td>
+                <td>The density of milk should be about 1.03 g/ml.</td>
+            </tr>
+                <td>Added Volume from Dissolved Sugar</td>
+                <td>Dissolving the sugar in milk should add about 0.6-0.65 ml per gram of sugar. However, during the simmering process, the volume may be smaller than the theoretical calculation due to evaporation.</td>
+            <tr>
+                <td>Milk Syrup Density</td>
+                <td>The density of the milk syrup mixture should be about 1.43 to 1.46 g/ml. Or 1.18 to 1.2</td>
+            </tr>
+            <tr>
+                <td>Everclear Density</td>
+                <td>The density of the  infused Everclear (75.5%) should be about 0.84-0.86 g/ml. If using 95% Everclear, the density should be about 0.8-0.82 g/ml.</td>
             </tr>
         </table>
     </div>
 
-        <h3>Ingredients</h3>
-        <ul class="checkbox-list" id="ingredients-list">
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="1">1</span> pound
-                    (<span class="alt-qty" data-alt-base="450">450</span>g) penne pasta or cavatelli
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="8">8</span> ounces
-                    (<span class="alt-qty" data-alt-base="225">225</span>g) bacon, guanciale, or pancetta, cut into small cubes
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="2">2</span> tablespoons bacon or guanciale fat
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="2.5">2–3</span> shallots
-                    (<span class="alt-qty" data-alt-base="75">75</span>g), finely chopped
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="3">3</span> garlic cloves, minced
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="0.5">1/2</span> teaspoon red pepper flakes
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="0.25">1/4</span> cup dry white wine or sherry
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="14">14</span> ounces tomato passata
-                    <span class="note">(plus 1/4 cup pasta water if using the last half of the bottle)</span>
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="0.5">1/2</span> cup heavy cream
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="0.25">1/4</span> cup
-                    (<span class="alt-qty" data-alt-base="21">21</span>g) freshly grated Parmesan cheese
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    <span class="qty" data-base="1">1</span> tablespoon butter
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox">
-                    Salt and black pepper to taste
-                </label>
-            </li>
-        </ul>
         <h3>Instructions</h3>
         <ol>
             <li>
@@ -294,6 +212,8 @@
         
             // Constants
             const sugarDensity = 0.641025641; // ml per gram of sugar empirically determined
+            const waterDensity = 1.0; // g per ml of water empirically determined
+            const everclearDensity = 0.83; // g per ml of Everclear empirically determined
         
             // Calculations (all in liters first)
             const everclearVol_mL = (totalVolume * finalABV / everclearABV);
@@ -301,12 +221,14 @@
             const totalSugar = totalVolume * sugarConc / 1000; // in grams but make sure to correct for volume in sugarConc
             const sugarVolume_mL = (totalSugar * sugarDensity); // in milliliters
             const waterVol_mL = (totalVolume - everclearVol_mL - sugarVolume_mL);
+            const waterWeight = (waterVol_mL * waterDensity)
+            const everclearWeight = (everclearVol_mL * everclearDensity)
         
             // Output
-            document.getElementById('everclearVol').textContent = Math.round(everclearVol_mL) + ' mL';
+            document.getElementById('everclearVol').textContent = Math.round(everclearVol_mL) + 'ml' + ' (' + Math.round(everclearWeight) + 'g)';
             document.getElementById('lemons').textContent = lemons;
-            document.getElementById('waterVol').textContent = Math.round(waterVol_mL) + ' mL';
-            document.getElementById('totalSugar').textContent = Math.round(totalSugar) + ' g';
+            document.getElementById('waterVol').textContent = Math.round(waterVol_mL) + 'ml' + ' (' + Math.round(waterWeight) + 'g)';
+            document.getElementById('totalSugar').textContent = Math.round(totalSugar) + 'g' + ' (' + Math.round(sugarVolume_mL) + 'ml)';
         }
         
         // Set up event listeners
