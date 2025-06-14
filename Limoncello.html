@@ -297,15 +297,15 @@
         
             // Calculations (all in liters first)
             const everclearVol_mL = (totalVolume * finalABV / everclearABV);
-            const lemons = Math.ceil(everclearVol_mL * 10 / 832); // 832 represents the arbitrary value used when developing this recipe
+            const lemons = Math.ceil(everclearVol_mL * 10 / 831); // 831 represents the arbitrary value used when developing this recipe
             const totalSugar = totalVolume * sugarConc / 1000; // in grams but make sure to correct for volume in sugarConc
             const sugarVolume_mL = (totalSugar * sugarDensity); // in milliliters
             const waterVol_mL = (totalVolume - everclearVol_mL - sugarVolume_mL);
         
             // Output
-            document.getElementById('everclearVol').textContent = everclearVol_mL.toFixed(2) + ' mL';
+            document.getElementById('everclearVol').textContent = Math.round(everclearVol_mL) + ' mL';
             document.getElementById('lemons').textContent = lemons;
-            document.getElementById('waterVol').textContent = waterVol_mL.toFixed(2) + ' mL';
+            document.getElementById('waterVol').textContent = Math.round(waterVol_mL) + ' mL';
             document.getElementById('totalSugar').textContent = Math.round(totalSugar) + ' g';
         }
         
