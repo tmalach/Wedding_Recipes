@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remi Pot Pie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/Wedding_Recipes/Pictures/favicon.ico" />
+    <style>
+        .checkbox-list {
+            list-style: none;
+            padding: 0;
+        }
+        .checkbox-list li {
+            margin-bottom: 0.5em;
+            font-size: 1.1em;
+        }
+        .checkbox-list input[type="checkbox"] {
+            transform: scale(1.2);
+            margin-right: 0.6em;
+            accent-color: #333;
+        }
+        .scaling-input {
+            margin: 1em 0;
+            font-size: 1.1em;
+        }
+        .scaling-input input {
+            width: 3em;
+            font-size: 1em;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lily and Tom's Wedding Recipes</h1>
+        <h5>June 22nd, 2025</h5>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <div class="dropdown" style="display:inline-block;">
+            <button class="dropbtn" tabindex="0">Recipes &#9662;</button>
+            <div class="dropdown-content">
+                <a href="Creamy_Tortellini_Soup.html">Creamy Tortellini Soup</a>
+                <a href="Dottie’s_Skirt_Steak.html">Dottie’s Skirt Steak</a>
+                <a href="French_Onion_Chicken_and_Gnocchi.html">French Onion Chicken and Gnocchi</a>
+                <a href="Garlic_Hummus.html">Garlic Hummus</a>
+                <a href="Irish_Cream_Coffee_Cake.html">Irish Cream Coffee Cake</a>
+                <a href="Italian_Penicillin.html">Italian Penicillin</a>
+                <a href="Pearl_Couscous_With_Feta_and_Chickpeas.html">Pearl Couscous With Feta and Chickpeas</a>
+                <a href="Penne_al_Baffo.html">Penne al Baffo</a>
+                <a href="Shrimp_Ajillo.html">Shrimp Ajillo</a>
+                <a href="White_Bean_Salad_With_Crispy_Cheese.html">White Bean Salad With Crispy Cheese</a>
+            </div>
+        </div>
+        <div class="dropdown" style="display:inline-block;">
+            <button class="dropbtn" tabindex="0">Bonus &#9662;</button>
+            <div class="dropdown-content">
+                <a href="Crema_di_Limoncello.html">Crema di Limoncello</a>
+                <a href="Limoncello.html">Limoncello</a>
+                <a href="Remi_Pot_Pie.html">Remi Pot Pie</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Remi Pot Pie</h2>
+        <img src="/Wedding_Recipes/Pictures/Remi_Pot_Pie.png"
+             alt="Remi Pot Pie - a savory treat for little man"
+             style="display:block; margin: 1.5rem auto; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+        
+        <div class="scaling-input">
+            <label for="scalor">Scale ingredients by: </label>
+            <input type="number" id="scalor" value="1" min="0.1" step="0.1">
+            <span>(e.g., 2 for double, 0.5 for half)</span>
+        </div>
+
+<h3>Ingredients</h3>
+<ul class="checkbox-list" id="ingredients-list">
+    <li><strong>For the Salad</strong></li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> can (15 ounces)
+            canned white beans (cannellini or great northern beans), drained and rinsed
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> cup
+            (<span class="alt-qty" data-alt-base="150">150</span>g) cherry tomatoes, halved
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="2">2</span> cups
+            (<span class="alt-qty" data-alt-base="40">40</span>g) arugula
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> small red onion
+            (<span class="alt-qty" data-alt-base="100">100</span>–<span class="alt-qty" data-alt-base="115">115</span>g), thinly sliced
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="0.5">½</span>–<span class="qty" data-base="1">1</span> cucumber
+            (<span class="alt-qty" data-alt-base="150">150</span>–<span class="alt-qty" data-alt-base="300">300</span>g), sliced then quartered
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1.5">1½</span> cups
+            (<span class="alt-qty" data-alt-base="75">75</span>g) carrots, shredded
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="8">8</span> ounces
+            (<span class="alt-qty" data-alt-base="240">240</span>g) mozzarella pearls, or torn into pieces
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="0.5">½</span> cup
+            (<span class="alt-qty" data-alt-base="15">15</span>g) fresh parsley, chopped
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="0.5">½</span> cup
+            (<span class="alt-qty" data-alt-base="15">15</span>g) fresh basil, chopped
+        </label>
+    </li>
+    <li><strong>For the Dressing</strong></li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="0.25">¼</span> cup
+            (<span class="alt-qty" data-alt-base="60">60</span>ml) extra-virgin olive oil
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> teaspoon Dijon mustard
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="2">2</span> tablespoons
+            (<span class="alt-qty" data-alt-base="30">30</span>ml) lemon juice
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1.5">1½</span> tablespoons
+            (<span class="alt-qty" data-alt-base="22.5">22.5</span>ml) red wine vinegar
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="3">3</span> garlic cloves, minced
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="0.5">½</span> teaspoon red pepper flakes
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> teaspoon dried oregano
+        </label>
+    </li>
+    <li>
+        <label>
+            <input type="checkbox">
+            Salt and black pepper to taste (about ¾ teaspoon salt, ¼ teaspoon black pepper)
+        </label>
+    </li>
+    <li><strong>For the Crispy Cheese</strong></li>
+    <li>
+        <label>
+            <input type="checkbox">
+            <span class="qty" data-base="1">1</span> cup
+            (<span class="alt-qty" data-alt-base="85">85</span>g) grated Parmesan cheese
+        </label>
+    </li>
+</ul>
+
+<h3>Instructions</h3>
+<ol>
+    <li>
+        <strong>Prepare the Crispy Cheese:</strong>
+        <ul>
+            <li>Preheat your oven to 400°F (200°C).</li>
+            <li>Line a baking sheet with parchment paper.</li>
+            <li>Spread the grated Parmesan cheese in small mounds (about 2 tablespoons each) on the parchment paper, flattening them slightly.</li>
+            <li>Bake for about 5–7 minutes, or until the cheese is melted and golden brown. Let them cool completely on the baking sheet; they will become crispy as they cool.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Make the Dressing:</strong>
+        <ul>
+            <li>In a small bowl or mason jar, whisk or shake together the olive oil, mustard, lemon juice, red wine vinegar, minced garlic, red pepper flakes, oregano, salt, and black pepper. Adjust seasoning to taste.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Assemble the Salad:</strong>
+        <ul>
+            <li>In a large bowl, combine the white beans, cherry tomatoes, arugula, red onion, cucumber, carrots, mozzarella, parsley, and basil.</li>
+            <li>Pour the dressing over the salad and toss gently to combine.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Serve:</strong>
+        <ul>
+            <li>Top the salad with the crispy cheese rounds just before serving to maintain their crispiness.</li>
+        </ul>
+    </li>
+</ol>
+
+<h3>Tips</h3>
+<ul class="tips-list">
+    <li><strong>Fresh Ingredients:</strong> Use the freshest possible vegetables for the best flavor and texture. Ripe cherry tomatoes and crisp cucumbers will enhance the overall taste.</li>
+    <li><strong>Rinse the Beans:</strong> If using canned beans, rinse them thoroughly to remove any excess sodium and to improve their flavor.</li>
+    <li><strong>Uniform Cuts:</strong> Try to cut the vegetables uniformly for an aesthetically pleasing presentation and even texture in every bite.</li>
+    <li><strong>Balance Flavors:</strong> Taste the dressing before adding it to the salad. Adjust the seasoning by adding more lemon juice for acidity, olive oil for richness, or salt and pepper as needed.</li>
+    <li><strong>Emulsify Well:</strong> Whisk the dressing ingredients well to ensure they are fully combined and emulsified. This will help coat the salad evenly.</li>
+    <li><strong>Make Extra:</strong> Make extra dressing in a mason jar to adjust the amount of dressing used as needed.</li>
+    <li><strong>Let Cheese Cool:</strong> Allow the cheese to cool completely on the parchment paper to achieve the desired crispiness. Use a spatula to carefully remove them once cooled.</li>
+    <li><strong>Storage:</strong> The salad can be stored in the refrigerator for up to 2 days. Refresh the salad with a little extra lemon juice and olive oil if needed before serving.</li>
+</ul>
+
+    <footer>
+        &copy; 2025 Tom and Lily Malachowski. All rights reserved.
+    </footer>
+    <script>
+        // Ingredient scaling logic for both main and alternative units
+        const scalorInput = document.getElementById('scalor');
+        const qtySpans = document.querySelectorAll('.qty');
+        const altQtySpans = document.querySelectorAll('.alt-qty');
+
+        function updateQuantities() {
+            const scalor = parseFloat(scalorInput.value) || 1;
+            qtySpans.forEach(span => {
+                const base = parseFloat(span.getAttribute('data-base'));
+                let scaled = base * scalor;
+                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+            });
+            altQtySpans.forEach(span => {
+                const base = parseFloat(span.getAttribute('data-alt-base'));
+                let scaled = base * scalor;
+                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+            });
+        }
+
+        scalorInput.addEventListener('input', updateQuantities);
+        // Initialize on page load
+        updateQuantities();
+    </script>
+</body>
+</html>
