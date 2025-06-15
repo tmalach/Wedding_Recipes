@@ -292,12 +292,12 @@
             qtySpans.forEach(span => {
                 const base = parseFloat(span.getAttribute('data-base'));
                 let scaled = base * scalor;
-                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+                span.textContent = (scaled % 1 === 0) ? scaled : +scaled.toFixed(2);
             });
             altQtySpans.forEach(span => {
                 const base = parseFloat(span.getAttribute('data-alt-base'));
                 let scaled = base * scalor;
-                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+                span.textContent = (scaled % 1 === 0) ? scaled : +scaled.toFixed(2);
             });
         }
     
