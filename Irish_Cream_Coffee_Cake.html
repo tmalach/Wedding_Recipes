@@ -5,30 +5,6 @@
     <title>Irish Cream Coffee Cake</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/Wedding_Recipes/Pictures/favicon.ico" />
-    <style>
-        .checkbox-list {
-            list-style: none;
-            padding: 0;
-        }
-        .checkbox-list li {
-            margin-bottom: 0.5em;
-            font-size: 1.1em;
-        }
-        .checkbox-list input[type="checkbox"] {
-            transform: scale(1.2);
-            margin-right: 0.6em;
-            accent-color: #333;
-        }
-        .scaling-input {
-            margin: 1em 0;
-            font-size: 1.1em;
-        }
-        .scaling-input input {
-            width: 3em;
-            font-size: 1em;
-            text-align: right;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -65,216 +41,213 @@
         <h2>Irish Cream Coffee Cake</h2>
         <img src="/Wedding_Recipes/Pictures/CoffeeCake.png"
              alt="Irish Cream Coffee Cake"
-             style="display:block; margin: 1.5rem auto; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
-        
+             style="display:block; margin: 0rem auto; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+        <figcaption class="img-caption">Image generated with ChatGPT.</figcaption>
         <div class="scaling-input">
             <label for="scalor">Scale ingredients by: </label>
             <input type="number" id="scalor" value="1" min="0.1" step="0.1">
             <span>(e.g., 2 for double, 0.5 for half)</span>
         </div>
-
-<h3>Ingredients</h3>
-<ul class="checkbox-list" id="ingredients-list">
-    <li><strong>For the Crumble:</strong></li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="1.5">1 1/2</span> cups
-            (<span class="alt-qty" data-alt-base="195">195</span>g) all-purpose flour
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="1">1</span> packed cup
-            (<span class="alt-qty" data-alt-base="220">220</span>g) dark brown sugar
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="1.5">1 1/2</span> teaspoons ground cinnamon
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="1">1</span> teaspoon ground nutmeg
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.25">1/4</span> teaspoon salt
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.75">3/4</span> cup
-            (<span class="alt-qty" data-alt-base="170">170</span>g) salted butter
-        </label>
-    </li>
-    <li><strong>For the Cake:</strong></li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="2">2</span> cups
-            (<span class="alt-qty" data-alt-base="260">260</span>g) all-purpose flour, plus more for dusting the pan
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="2">2</span> teaspoons baking powder
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.25">1/4</span> teaspoon baking soda
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="1">1</span> teaspoon salt
-        </label>
-    </li>
-        <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.75">3/4</span> cup
-            (<span class="alt-qty" data-alt-base="170">170</span>g) salted butter, <em>at room temperature</em>, plus more for greasing the pan
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.75">3/4</span> cup
-            (<span class="alt-qty" data-alt-base="150">150</span>g) raw or white granulated sugar
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="2">2</span> large eggs, <em>at room temperature</em>
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.5">1/2</span> cup
-            (<span class="alt-qty" data-alt-base="120">120</span>g) sour cream, <em>at room temperature</em>
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="1.5">1 1/2</span> teaspoons vanilla extract
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.5">1/2</span> cup
-            (<span class="alt-qty" data-alt-base="120">120</span>ml) Irish cream liqueur (such as Baileys), <em>at room temperature</em>
-        </label>
-    </li>
-    <li><strong>For the Glaze:</strong></li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="2">2</span> tablespoons
-            (<span class="alt-qty" data-alt-base="30">30</span>ml) Irish cream liqueur
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.5">1/2</span> cup
-            (<span class="alt-qty" data-alt-base="62">62</span>g) confectioners’ sugar
-        </label>
-    </li>
-</ul>
-
-<h3>Instructions</h3>
-<ol>
-    <li>
-        <strong>Preheat Oven:</strong>
-        <ul>
-            <li>Preheat your oven to 350°F (175°C). Grease and flour a 9-inch round or square baking pan. Line with parchment paper to help remove the cake later.</li>
-            <li><em>Optional:</em> Record the weight of the mixing bowl for cake batter (see step 6). Also weigh the mixing bowl for the crumble topping to ensure even distribution (see step 6).</li>
+        <h3>Ingredients</h3>
+        <ul class="checkbox-list" id="ingredients-list">
+            <li><strong>For the Crumble:</strong></li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1.5">1 1/2</span> cups
+                    (<span class="alt-qty" data-alt-base="195">195</span> g) all-purpose flour
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1">1</span> packed cup
+                    (<span class="alt-qty" data-alt-base="220">220</span> g) dark brown sugar
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1.5">1 1/2</span> teaspoons ground cinnamon
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1">1</span> teaspoon ground nutmeg
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.25">1/4</span> teaspoon salt
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.75">3/4</span> cup
+                    (<span class="alt-qty" data-alt-base="170">170</span> g) salted butter
+                </label>
+            </li>
+            <li><strong>For the Cake:</strong></li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="2">2</span> cups
+                    (<span class="alt-qty" data-alt-base="260">260</span> g) all-purpose flour, plus more for dusting the pan
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="2">2</span> teaspoons baking powder
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.25">1/4</span> teaspoon baking soda
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1">1</span> teaspoon salt
+                </label>
+            </li>
+                <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.75">3/4</span> cup
+                    (<span class="alt-qty" data-alt-base="170">170</span> g) salted butter, <em>at room temperature</em>, plus more for greasing the pan
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.75">3/4</span> cup
+                    (<span class="alt-qty" data-alt-base="150">150</span> g) raw or white granulated sugar
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="2">2</span> large eggs, <em>at room temperature</em>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.5">1/2</span> cup
+                    (<span class="alt-qty" data-alt-base="120">120</span> g) sour cream, <em>at room temperature</em>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1.5">1 1/2</span> teaspoons vanilla extract
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.5">1/2</span> cup
+                    (<span class="alt-qty" data-alt-base="120">120</span> ml) Irish cream liqueur (such as Baileys), <em>at room temperature</em>
+                </label>
+            </li>
+            <li><strong>For the Glaze:</strong></li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="2">2</span> tablespoons
+                    (<span class="alt-qty" data-alt-base="30">30</span> ml) Irish cream liqueur
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.5">1/2</span> cup
+                    (<span class="alt-qty" data-alt-base="62">62</span> g) confectioners’ sugar
+                </label>
+            </li>
         </ul>
-    </li>
-    <li>
-        <strong>Make the Crumble Topping:</strong>
-        <ul>
-            <li>In a medium bowl, combine the flour, dark brown sugar, ground cinnamon, ground nutmeg, and salt. Mix with clean hands to make a uniform mixture.</li>
-            <li>Add butter and mix thoroughly until crumbly. Place in the fridge until you are ready to assemble. This may help prevent crumble from sinking.</li>
+        <h3>Instructions</h3>
+        <ol>
+            <li>
+                <strong>Preheat Oven:</strong>
+                <ul>
+                    <li>Preheat your oven to 350°F (175°C). Grease and flour a 9-inch round or square baking pan. Line with parchment paper to help remove the cake later.</li>
+                    <li><em>Optional:</em> Record the weight of the mixing bowl for cake batter (see step 6). Also weigh the mixing bowl for the crumble topping to ensure even distribution (see step 6).</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Make the Crumble Topping:</strong>
+                <ul>
+                    <li>In a medium bowl, combine the flour, dark brown sugar, ground cinnamon, ground nutmeg, and salt. Mix with clean hands to make a uniform mixture.</li>
+                    <li>Add butter and mix thoroughly until crumbly. Place in the fridge until you are ready to assemble. This may help prevent crumble from sinking.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Combine Dry Ingredients:</strong>
+                <ul>
+                    <li>In a separate bowl, whisk together the all-purpose flour, baking powder, baking soda, and salt.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Make the Cake Batter:</strong>
+                <ul>
+                    <li>In a large mixing bowl (preferably with a paddle attachment), cream together the butter and granulated sugar until light and fluffy using a medium-high speed, about 3 minutes.</li>
+                    <li>At medium-low speed, add the eggs one at a time, beating well after each addition. Scrape the sides with a spatula if needed.</li>
+                    <li>Mix/stir in the sour cream and vanilla extract.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Mix Wet and Dry Ingredients:</strong>
+                <ul>
+                    <li>Gradually add the dry ingredients to the creamed mixture, alternating with the Irish cream liqueur. Begin and end with the flour mixture, mixing until just combined. Avoid overmixing which will overdevelop the gluten.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Assemble the Coffee Cake:</strong>
+                <ul>
+                    <li>Spread half of the cake batter into the prepared pan. Working from the edges to the center, sprinkle half of the crumble topping over the batter. Repeat with the remaining batter and crumble topping.</li>
+                    <li>It may be helpful to weigh the batter before pouring to create even layers. Record the weight of the mixing bowl before preparing cake batter.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Bake the Cake:</strong>
+                <ul>
+                    <li>Bake in the preheated oven for 40–60 minutes or until a toothpick inserted into the center comes out with just a few crumbs or clean.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Make the Glaze:</strong>
+                <ul>
+                    <li>While the cake is baking, prepare the glaze. In a small bowl, whisk together the Irish cream liqueur and confectioners’ sugar until smooth.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Finish and Serve:</strong>
+                <ul>
+                    <li>Allow the cake to cool in the pan for about 10 minutes before transferring it to a wire rack. Let the cake cool for another 10–20 minutes.</li>
+                    <li>Drizzle the glaze over the warm cake. Slice and enjoy your delicious Irish Cream Coffee Cake!</li>
+                    <li><em>Optional:</em> Poke holes evenly throughout the top of the cake and drizzle glaze over so some pieces have glaze within them.</li>
+                </ul>
+            </li>
+        </ol>
+        <h3>Tips</h3>
+        <ul class="tips-list">
+            <li><strong>Room Temperature Ingredients:</strong> Ensure that the butter, eggs, and sour cream are at room temperature before beginning. Room temperature ingredients will mix more evenly, resulting in a smoother batter.</li>
+            <li><strong>Proper Mixing:</strong> Cream the butter and sugar together until light and fluffy. Add the eggs one at a time, mixing well after each addition. Do not overmix the batter once the dry ingredients are added; mix just until combined to avoid developing too much gluten.</li>
+            <li><strong>Use Irish Cream Liqueur:</strong> The Irish cream liqueur adds flavor and moisture to the cake. Ensure it's at room temperature to prevent the batter from seizing or curdling.</li>
+            <li><strong>Prepare the Crumble Topping:</strong> The crumble topping adds a delicious texture to the cake. Mix the crumble ingredients until they resemble coarse crumbs. Sprinkle the crumble evenly over the cake batter. If the butter is too warm it will create large homogenous chunks instead of crumbles. Try refrigerating and breaking it up with a cold fork.</li>
+            <li><strong>Baking Time:</strong> Check the cake around 40 minutes. Insert a toothpick into the center of the cake—if it comes out clean or with a few moist crumbs, the cake is done. Avoid overbaking to prevent a dry cake. Check the cake every 5–15 minutes after the initial 40 minutes.</li>
+            <li><strong>Cooling and Glazing:</strong> Allow the cake to cool slightly in the pan before transferring it to a wire rack to cool completely. Drizzle the glaze over the cake while it's still warm for a delicious finishing touch.</li>
+            <li><strong>Storage:</strong> Store any leftover cake in an airtight container at room temperature for up to 2–3 days. The flavors often improve on the second day.</li>
+            <li><strong>Serve:</strong> Enjoy the Irish Cream Coffee Cake as a delightful treat with a cup of coffee or tea, or serve it as a dessert with a scoop of vanilla ice cream.</li>
         </ul>
-    </li>
-    <li>
-        <strong>Combine Dry Ingredients:</strong>
-        <ul>
-            <li>In a separate bowl, whisk together the all-purpose flour, baking powder, baking soda, and salt.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Make the Cake Batter:</strong>
-        <ul>
-            <li>In a large mixing bowl (preferably with a paddle attachment), cream together the butter and granulated sugar until light and fluffy using a medium-high speed, about 3 minutes.</li>
-            <li>At medium-low speed, add the eggs one at a time, beating well after each addition. Scrape the sides with a spatula if needed.</li>
-            <li>Mix/stir in the sour cream and vanilla extract.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Mix Wet and Dry Ingredients:</strong>
-        <ul>
-            <li>Gradually add the dry ingredients to the creamed mixture, alternating with the Irish cream liqueur. Begin and end with the flour mixture, mixing until just combined. Avoid overmixing which will overdevelop the gluten.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Assemble the Coffee Cake:</strong>
-        <ul>
-            <li>Spread half of the cake batter into the prepared pan. Working from the edges to the center, sprinkle half of the crumble topping over the batter. Repeat with the remaining batter and crumble topping.</li>
-            <li>It may be helpful to weigh the batter before pouring to create even layers. Record the weight of the mixing bowl before preparing cake batter.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Bake the Cake:</strong>
-        <ul>
-            <li>Bake in the preheated oven for 40–60 minutes or until a toothpick inserted into the center comes out with just a few crumbs or clean.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Make the Glaze:</strong>
-        <ul>
-            <li>While the cake is baking, prepare the glaze. In a small bowl, whisk together the Irish cream liqueur and confectioners’ sugar until smooth.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Finish and Serve:</strong>
-        <ul>
-            <li>Allow the cake to cool in the pan for about 10 minutes before transferring it to a wire rack. Let the cake cool for another 10–20 minutes.</li>
-            <li>Drizzle the glaze over the warm cake. Slice and enjoy your delicious Irish Cream Coffee Cake!</li>
-            <li><em>Optional:</em> Poke holes evenly throughout the top of the cake and drizzle glaze over so some pieces have glaze within them.</li>
-        </ul>
-    </li>
-</ol>
-
-<h3>Tips</h3>
-<ul class="tips-list">
-    <li><strong>Room Temperature Ingredients:</strong> Ensure that the butter, eggs, and sour cream are at room temperature before beginning. Room temperature ingredients will mix more evenly, resulting in a smoother batter.</li>
-    <li><strong>Proper Mixing:</strong> Cream the butter and sugar together until light and fluffy. Add the eggs one at a time, mixing well after each addition. Do not overmix the batter once the dry ingredients are added; mix just until combined to avoid developing too much gluten.</li>
-    <li><strong>Use Irish Cream Liqueur:</strong> The Irish cream liqueur adds flavor and moisture to the cake. Ensure it's at room temperature to prevent the batter from seizing or curdling.</li>
-    <li><strong>Prepare the Crumble Topping:</strong> The crumble topping adds a delicious texture to the cake. Mix the crumble ingredients until they resemble coarse crumbs. Sprinkle the crumble evenly over the cake batter. If the butter is too warm it will create large homogenous chunks instead of crumbles. Try refrigerating and breaking it up with a cold fork.</li>
-    <li><strong>Baking Time:</strong> Check the cake around 40 minutes. Insert a toothpick into the center of the cake—if it comes out clean or with a few moist crumbs, the cake is done. Avoid overbaking to prevent a dry cake. Check the cake every 5–15 minutes after the initial 40 minutes.</li>
-    <li><strong>Cooling and Glazing:</strong> Allow the cake to cool slightly in the pan before transferring it to a wire rack to cool completely. Drizzle the glaze over the cake while it's still warm for a delicious finishing touch.</li>
-    <li><strong>Storage:</strong> Store any leftover cake in an airtight container at room temperature for up to 2–3 days. The flavors often improve on the second day.</li>
-    <li><strong>Serve:</strong> Enjoy the Irish Cream Coffee Cake as a delightful treat with a cup of coffee or tea, or serve it as a dessert with a scoop of vanilla ice cream.</li>
-</ul>
-
+    </div>
     <footer>
         &copy; 2025 Tom and Lily Malachowski. All rights reserved.
     </footer>
@@ -289,12 +262,12 @@
             qtySpans.forEach(span => {
                 const base = parseFloat(span.getAttribute('data-base'));
                 let scaled = base * scalor;
-                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+                span.textContent = (scaled % 1 === 0) ? scaled : +scaled.toFixed(2);
             });
             altQtySpans.forEach(span => {
                 const base = parseFloat(span.getAttribute('data-alt-base'));
                 let scaled = base * scalor;
-                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+                span.textContent = (scaled % 1 === 0) ? scaled : +scaled.toFixed(2);
             });
         }
 
