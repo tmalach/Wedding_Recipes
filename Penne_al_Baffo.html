@@ -5,30 +5,6 @@
     <title>Penne al Baffo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/Wedding_Recipes/Pictures/favicon.ico" />
-    <style>
-        .checkbox-list {
-            list-style: none;
-            padding: 0;
-        }
-        .checkbox-list li {
-            margin-bottom: 0.5em;
-            font-size: 1.1em;
-        }
-        .checkbox-list input[type="checkbox"] {
-            transform: scale(1.2);
-            margin-right: 0.6em;
-            accent-color: #333;
-        }
-        .scaling-input {
-            margin: 1em 0;
-            font-size: 1.1em;
-        }
-        .scaling-input input {
-            width: 3em;
-            font-size: 1em;
-            text-align: right;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -65,147 +41,145 @@
         <h2>Penne al Baffo</h2>
         <img src="https://images.unsplash.com/photo-1630151317550-db97d275ce2d?auto=format&fit=crop&w=800&q=80"
              alt="Penne al Baffo - creamy tomato pasta"
-             style="display:block; margin: 1.5rem auto; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
-        
+             style="display:block; margin: 0rem auto; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+        <figcaption class="img-caption">Image from Unsplash.</figcaption>
         <div class="scaling-input">
             <label for="scalor">Scale ingredients by: </label>
             <input type="number" id="scalor" value="1" min="0.1" step="0.1">
             <span>(e.g., 2 for double, 0.5 for half)</span>
         </div>
-
-<h3>Ingredients</h3>
-<ul class="checkbox-list" id="ingredients-list">
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="12">12</span> ounces
-            (<span class="alt-qty" data-alt-base="330">330</span>g) penne pasta or cavatelli
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="8">8</span> ounces
-            (<span class="alt-qty" data-alt-base="225">225</span>g) bacon, guanciale, or pancetta, cut into small cubes
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="2">2</span> tablespoons
-            (<span class="alt-qty" data-alt-base="30">30</span>ml) bacon or guanciale fat
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="3">3</span> shallots
-            (<span class="alt-qty" data-alt-base="75">75</span>g), finely chopped
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="3">3</span> garlic cloves, minced
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.5">1/2</span> teaspoon red pepper flakes
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.25">1/4</span> cup
-            (<span class="alt-qty" data-alt-base="60">60</span>ml) dry white wine or sherry
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="14">14</span> ounces
-            (<span class="alt-qty" data-alt-base="420">420</span>ml) tomato passata
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.5">1/2</span> cup
-            (<span class="alt-qty" data-alt-base="120">120</span>ml) heavy cream
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.25">1/4</span> cup
-            (<span class="alt-qty" data-alt-base="21">21</span>g) freshly grated Parmesan cheese
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="1">1</span> tablespoon butter
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            Salt and black pepper to taste
-        </label>
-    </li>
-</ul>
-
-<h3>Instructions</h3>
-<ol>
-    <li>
-        <strong>Cook the Pasta</strong>
-        <ul>
-            <li>Bring a large pot of salted water (1 tablespoon salt for every 2 quarts of water) to a boil.</li>
-            <li>Add the pasta and cook according to the package instructions until al dente.</li>
+        <h3>Ingredients</h3>
+        <ul class="checkbox-list" id="ingredients-list">
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="12">12</span> ounces
+                    (<span class="alt-qty" data-alt-base="330">330</span> g) penne pasta or cavatelli
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="8">8</span> ounces
+                    (<span class="alt-qty" data-alt-base="225">225</span> g) bacon, guanciale, or pancetta, cut into small cubes
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="2">2</span> tablespoons
+                    (<span class="alt-qty" data-alt-base="30">30</span> ml) bacon or guanciale fat
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="3">3</span> shallots
+                    (<span class="alt-qty" data-alt-base="75">75</span> g), finely chopped
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="3">3</span> garlic cloves, minced
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.5">1/2</span> teaspoon red pepper flakes
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.25">1/4</span> cup
+                    (<span class="alt-qty" data-alt-base="60">60</span> ml) dry white wine or sherry
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="14">14</span> ounces
+                    (<span class="alt-qty" data-alt-base="420">420</span> ml) tomato passata
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.5">1/2</span> cup
+                    (<span class="alt-qty" data-alt-base="120">120</span> ml) heavy cream
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.25">1/4</span> cup
+                    (<span class="alt-qty" data-alt-base="21">21</span> g) freshly grated Parmesan cheese
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1">1</span> tablespoon butter
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    Salt and black pepper to taste
+                </label>
+            </li>
         </ul>
-    </li>
-    <li>
-        <strong>Prepare the Sauce</strong>
-        <ul>
-            <li>In a large skillet, cook the bacon/guanciale/pancetta over medium heat. Drain the bacon/guanciale fat into a ramekin.</li>
-            <li>Add 2 tablespoons of bacon/guanciale fat to the pan and heat over medium heat. Add the finely chopped shallots and cook until softened, about 5 minutes.</li>
-            <li>Add garlic and red pepper flakes and cook until fragrant, about 1 minute.</li>
-            <li>Add the white/sherry wine to deglaze the pan. Scrape off fond and let the liquid reduce to cook off alcohol.</li>
+        <h3>Instructions</h3>
+        <ol>
+            <li>
+                <strong>Cook the Pasta</strong>
+                <ul>
+                    <li>Bring a large pot of salted water (1 tablespoon salt for every 2 quarts of water) to a boil.</li>
+                    <li>Add the pasta and cook according to the package instructions until al dente.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Prepare the Sauce</strong>
+                <ul>
+                    <li>In a large skillet, cook the bacon/guanciale/pancetta over medium heat. Drain the bacon/guanciale fat into a ramekin.</li>
+                    <li>Add 2 tablespoons of bacon/guanciale fat to the pan and heat over medium heat. Add the finely chopped shallots and cook until softened, about 5 minutes.</li>
+                    <li>Add garlic and red pepper flakes and cook until fragrant, about 1 minute.</li>
+                    <li>Add the white/sherry wine to deglaze the pan. Scrape off fond and let the liquid reduce to cook off alcohol.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Add Tomato and Cream</strong>
+                <ul>
+                    <li>Pour in the tomato passata and stir well to combine with the bacon/guanciale and shallots. Let the mixture simmer for about 10 minutes until slightly thickened.</li>
+                    <li>Reduce the heat to a gentle simmer and stir in the heavy cream. Cook for an additional 5 minutes, stirring occasionally, until the sauce is well combined and creamy.</li>
+                    <li>Reduce heat to low, and add the parmesan cheese and butter. Season with salt and black pepper to taste.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Combine Pasta and Sauce</strong>
+                <ul>
+                    <li>Add the cooked pasta to the skillet with the creamy tomato-bacon/guanciale sauce in batches, and toss everything together until the pasta is evenly coated with the sauce.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Serve</strong>
+                <ul>
+                    <li>Serve the Penne al Baffo immediately, garnished with fresh basil leaves and grated Parmesan cheese if desired.</li>
+                </ul>
+            </li>
+        </ol>
+        <h3>Tips</h3>
+        <ul class="tips-list">
+            <li><strong>Quality Ingredients:</strong> Use high-quality tomato passata and meat for the best flavor. Fresh ingredients make a big difference in this simple dish. Many passata jars come in 24 ounces. If you are using the second half of the jar, and there is only 10 ounces left, reserve 1/4 cup of pasta water, add to the jar, shake, and add to the dish. This will collect all of the passata and add required volume.</li>
+            <li><strong>Cream Consistency:</strong> Adjust the amount of cream to achieve your preferred sauce consistency. If you like it creamier, add a bit more cream.</li>
+            <li><strong>Pasta Cooking:</strong> Make sure to cook the pasta al dente, as it will continue to cook slightly when tossed with the hot sauce.</li>
+            <li><strong>Seasoning:</strong> Taste the sauce before adding salt, as the meat can be quite salty. Adjust the seasoning accordingly.</li>
+            <li><strong>Herbs and Cheese:</strong> Fresh basil and Parmesan cheese add great flavor to the dish, but they are optional. Feel free to skip them if you prefer a simpler version.</li>
+            <li><strong>Make Ahead:</strong> You can prepare the sauce ahead of time and store it in the refrigerator for up to 2 days. Reheat it gently on the stove before tossing with freshly cooked pasta.</li>
         </ul>
-    </li>
-    <li>
-        <strong>Add Tomato and Cream</strong>
-        <ul>
-            <li>Pour in the tomato passata and stir well to combine with the bacon/guanciale and shallots. Let the mixture simmer for about 10 minutes until slightly thickened.</li>
-            <li>Reduce the heat to a gentle simmer and stir in the heavy cream. Cook for an additional 5 minutes, stirring occasionally, until the sauce is well combined and creamy.</li>
-            <li>Reduce heat to low, and add the parmesan cheese and butter. Season with salt and black pepper to taste.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Combine Pasta and Sauce</strong>
-        <ul>
-            <li>Add the cooked pasta to the skillet with the creamy tomato-bacon/guanciale sauce in batches, and toss everything together until the pasta is evenly coated with the sauce.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Serve</strong>
-        <ul>
-            <li>Serve the Penne al Baffo immediately, garnished with fresh basil leaves and grated Parmesan cheese if desired.</li>
-        </ul>
-    </li>
-</ol>
-
-<h3>Tips</h3>
-<ul class="tips-list">
-    <li><strong>Quality Ingredients:</strong> Use high-quality tomato passata and meat for the best flavor. Fresh ingredients make a big difference in this simple dish. Many passata jars come in 24 ounces. If you are using the second half of the jar, and there is only 10 ounces left, reserve 1/4 cup of pasta water, add to the jar, shake, and add to the dish. This will collect all of the passata and add required volume.</li>
-    <li><strong>Cream Consistency:</strong> Adjust the amount of cream to achieve your preferred sauce consistency. If you like it creamier, add a bit more cream.</li>
-    <li><strong>Pasta Cooking:</strong> Make sure to cook the pasta al dente, as it will continue to cook slightly when tossed with the hot sauce.</li>
-    <li><strong>Seasoning:</strong> Taste the sauce before adding salt, as the meat can be quite salty. Adjust the seasoning accordingly.</li>
-    <li><strong>Herbs and Cheese:</strong> Fresh basil and Parmesan cheese add great flavor to the dish, but they are optional. Feel free to skip them if you prefer a simpler version.</li>
-    <li><strong>Make Ahead:</strong> You can prepare the sauce ahead of time and store it in the refrigerator for up to 2 days. Reheat it gently on the stove before tossing with freshly cooked pasta.</li>
-</ul>
+    </div>
     <footer>
         &copy; 2025 Tom and Lily Malachowski. All rights reserved.
     </footer>
@@ -220,12 +194,12 @@
             qtySpans.forEach(span => {
                 const base = parseFloat(span.getAttribute('data-base'));
                 let scaled = base * scalor;
-                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+                span.textContent = (scaled % 1 === 0) ? scaled : +scaled.toFixed(2);
             });
             altQtySpans.forEach(span => {
                 const base = parseFloat(span.getAttribute('data-alt-base'));
                 let scaled = base * scalor;
-                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+                span.textContent = (scaled % 1 === 0) ? scaled : +scaled.toFixed(2);
             });
         }
 
