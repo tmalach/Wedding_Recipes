@@ -5,30 +5,6 @@
     <title>Creamy Tortellini Soup</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/Wedding_Recipes/Pictures/favicon.ico" />
-    <style>
-        .checkbox-list {
-            list-style: none;
-            padding: 0;
-        }
-        .checkbox-list li {
-            margin-bottom: 0.5em;
-            font-size: 1.1em;
-        }
-        .checkbox-list input[type="checkbox"] {
-            transform: scale(1.2);
-            margin-right: 0.6em;
-            accent-color: #333;
-        }
-        .scaling-input {
-            margin: 1em 0;
-            font-size: 1.1em;
-        }
-        .scaling-input input {
-            width: 3em;
-            font-size: 1em;
-            text-align: right;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -66,245 +42,242 @@
         <img src="/Wedding_Recipes/Pictures/CreamyTorts.png"
              alt="Creamy Tortellini Soup"
              style="display:block; margin: 1.5rem auto; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
-        
+        <figcaption class="img-caption">Image generated with ChatGPT and Unsplash</figcaption>
         <div class="scaling-input">
             <label for="scalor">Scale ingredients by: </label>
             <input type="number" id="scalor" value="1" min="0.1" step="0.1">
             <span>(e.g., 2 for double, 0.5 for half)</span>
         </div>
-
-<h3>Ingredients</h3>
-<ul class="checkbox-list" id="ingredients-list">
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="1">1</span> tablespoon
-            (<span class="alt-qty" data-alt-base="15">15</span>ml) olive oil
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="1">1</span> pound
-            (<span class="alt-qty" data-alt-base="450">450</span>g) Italian sweet sausage, casing removed
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="1">1</span> medium 
-            (~<span class="alt-qty" data-alt-base="150">150</span>g), yellow onion finely chopped
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="3">3</span> garlic cloves, minced
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="2">2</span> teaspoons Italian seasoning
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.5">½</span> teaspoon smoked paprika
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.25">¼</span> teaspoon dried fennel seeds
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.25">¼</span> teaspoon red pepper flakes
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            Salt and black pepper, to taste
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="1">1</span> tablespoon
-            (<span class="alt-qty" data-alt-base="15">15</span>ml) tomato paste
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="4">4</span> cups
-            (<span class="alt-qty" data-alt-base="950">950</span>ml) chicken broth
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="14">14</span> ounces
-            (<span class="alt-qty" data-alt-base="420">420</span>g) tomato passata
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="9">9</span>–<span class="qty" data-base="10">10</span> ounces
-            (<span class="alt-qty" data-alt-base="250">250</span>–<span class="alt-qty" data-alt-base="280">280</span>g) cheese tortellini
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="3">3</span> cups
-            (<span class="alt-qty" data-alt-base="90">90</span>g) fresh spinach, roughly chopped
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.75">¾</span> cup
-            (<span class="alt-qty" data-alt-base="180">180</span>ml) heavy cream
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.5">½</span> cup
-            (<span class="alt-qty" data-alt-base="45">45</span>g) grated Parmesan cheese
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="0.5">½</span> cup
-            (<span class="alt-qty" data-alt-base="10">10</span>g) fresh basil
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="checkbox">
-            <span class="qty" data-base="1">1</span> tablespoon
-            (<span class="alt-qty" data-alt-base="15">15</span>ml) lemon juice
-        </label>
-    </li>
-</ul>
-
-<h3>Instructions</h3>
-<ol>
-    <li>
-        <strong>Cook the Sausage:</strong>
-        <ul>
-            <li>Heat the olive oil in a large pot over medium heat. Add sausage and cook until browned and cooked through, about 3–5 minutes. Leave 2 tablespoons of fat behind.</li>
+        <h3>Ingredients</h3>
+        <ul class="checkbox-list" id="ingredients-list">
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1">1</span> tablespoon
+                    (<span class="alt-qty" data-alt-base="15">15</span> ml) olive oil
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1">1</span> lb
+                    (<span class="alt-qty" data-alt-base="450">450</span> g) Italian sweet sausage, casing removed
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1">1</span> medium 
+                    (~<span class="alt-qty" data-alt-base="150">150</span> g), yellow onion finely chopped
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="3">3</span> garlic cloves, minced
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="2">2</span> teaspoons Italian seasoning
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.5">½</span> teaspoon smoked paprika
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.25">¼</span> teaspoon dried fennel seeds
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.25">¼</span> teaspoon red pepper flakes
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    Salt and black pepper, to taste
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1">1</span> tablespoon
+                    (<span class="alt-qty" data-alt-base="15">15</span> ml) tomato paste
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="4">4</span> cups
+                    (<span class="alt-qty" data-alt-base="950">950</span> ml) chicken broth
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="14">14</span> ounces
+                    (<span class="alt-qty" data-alt-base="420">420</span> g) tomato passata
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="9">9</span>–<span class="qty" data-base="10">10</span> ounces
+                    (<span class="alt-qty" data-alt-base="250">250</span>–<span class="alt-qty" data-alt-base="280">280</span> g) cheese tortellini
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="3">3</span> cups
+                    (<span class="alt-qty" data-alt-base="90">90</span> g) fresh spinach, roughly chopped
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.75">¾</span> cup
+                    (<span class="alt-qty" data-alt-base="180">180</span> ml) heavy cream
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.5">½</span> cup
+                    (<span class="alt-qty" data-alt-base="45">45</span> g) grated Parmesan cheese
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="0.5">½</span> cup
+                    (<span class="alt-qty" data-alt-base="10">10</span> g) fresh basil
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span class="qty" data-base="1">1</span> tablespoon
+                    (<span class="alt-qty" data-alt-base="15">15</span> ml) lemon juice
+                </label>
+            </li>
         </ul>
-    </li>
-    <li>
-        <strong>Cook the Vegetables and Bloom the Aromatics:</strong>
-        <ul>
-            <li>Add the onion and sauté until softened, about 3–5 minutes.</li>
-            <li>Stir in the garlic, Italian seasoning, paprika, fennel seed, red pepper flakes, salt, and pepper. Cook for another minute until fragrant. Do not add too much salt at this point.</li>
-            <li>Add tomato paste and cook for 2–3 minutes until it starts to brown a bit.</li>
+        <h3>Instructions</h3>
+        <ol>
+            <li>
+                <strong>Cook the Sausage:</strong>
+                <ul>
+                    <li>Heat the olive oil in a large pot over medium heat. Add sausage and cook until browned and cooked through, about 3–5 minutes. Leave 2 tablespoons of fat behind.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Cook the Vegetables and Bloom the Aromatics:</strong>
+                <ul>
+                    <li>Add the onion and sauté until softened, about 3–5 minutes.</li>
+                    <li>Stir in the garlic, Italian seasoning, paprika, fennel seed, red pepper flakes, salt, and pepper. Cook for another minute until fragrant. Do not add too much salt at this point.</li>
+                    <li>Add tomato paste and cook for 2–3 minutes until it starts to brown a bit.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Add Chicken Stock and Passata:</strong>
+                <ul>
+                    <li>Gradually pour in the chicken broth and tomato passata. Simmer 10 minutes.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Cook the Tortellini:</strong>
+                <ul>
+                    <li>Bring the soup to a simmer, then add the tortellini. Cook according to the package instructions, usually about 5–7 minutes, until the tortellini are tender. The tortellini can be a little bit under since it will continue to cook with the spinach.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Cook the Spinach:</strong>
+                <ul>
+                    <li>Stir in the chopped spinach and cook until wilted, about 2–3 minutes.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Add Cream, Cheese, and Basil:</strong>
+                <ul>
+                    <li>Lower the heat slightly and add heavy cream and let the mixture simmer for 2–3 minutes.</li>
+                    <li>Add the grated Parmesan cheese, stirring until melted and the soup is creamy.</li>
+                    <li>Reduce the heat to low and add basil and lemon juice and adjust the seasoning with additional salt and pepper, if needed.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Serve:</strong>
+                <ul>
+                    <li>Serve the soup hot, garnished with extra Parmesan cheese and a sprinkle of fresh herbs if desired.</li>
+                </ul>
+            </li>
+        </ol>
+        <h3>Tips</h3>
+        <ul class="tips-list">
+            <li>
+                <strong>Sauté Vegetables Properly</strong>
+                <ul>
+                    <li>Make sure the vegetables are softened and just starting to caramelize to release their natural sweetness and enhance the overall flavor of the soup.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Use High-Quality Broth</strong>
+                <ul>
+                    <li>Use a high-quality chicken or vegetable broth. If you have homemade broth, it’s even better. Store-bought broth can be enhanced with a little bit of extra seasoning or by simmering it with additional herbs.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Add Dairy Gradually</strong>
+                <ul>
+                    <li>Lower the heat before adding the cream and stir continuously. You can temper the cream by adding a small amount of hot broth to it before mixing it into the pot.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Cook Tortellini to Al Dente</strong>
+                <ul>
+                    <li>Cook the tortellini just until al dente, following the package instructions. They will continue to cook slightly in the hot soup.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Season to Taste</strong>
+                <ul>
+                    <li>Taste the soup before serving and adjust the seasoning with salt and pepper. A bit of freshly grated nutmeg can also enhance the flavor of creamy soups.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Fresh Spinach at the End</strong>
+                <ul>
+                    <li>Stir in the spinach just before serving and cook until just wilted. This keeps the spinach from becoming overcooked and slimy.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Cheese for Creaminess</strong>
+                <ul>
+                    <li>Use freshly grated Parmesan cheese and stir it in just before serving for a smooth, creamy texture.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Storage and Reheating</strong>
+                <ul>
+                    <li>Store leftovers in an airtight container in the refrigerator for up to 3 days. Reheat gently over low heat to avoid breaking the creamy base. Add a splash of broth or cream if the soup thickens too much upon standing.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Optional Garnishes</strong>
+                <ul>
+                    <li>Garnish with extra Parmesan cheese, lemon zest, crushed red pepper, or fresh parsley for added flavor and a pop of color.</li>
+                </ul>
+            </li>
         </ul>
-    </li>
-    <li>
-        <strong>Add Chicken Stock and Passata:</strong>
-        <ul>
-            <li>Gradually pour in the chicken broth and tomato passata. Simmer 10 minutes.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Cook the Tortellini:</strong>
-        <ul>
-            <li>Bring the soup to a simmer, then add the tortellini. Cook according to the package instructions, usually about 5–7 minutes, until the tortellini are tender. The tortellini can be a little bit under since it will continue to cook with the spinach.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Cook the Spinach:</strong>
-        <ul>
-            <li>Stir in the chopped spinach and cook until wilted, about 2–3 minutes.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Add Cream, Cheese, and Basil:</strong>
-        <ul>
-            <li>Lower the heat slightly and add heavy cream and let the mixture simmer for 2–3 minutes.</li>
-            <li>Add the grated Parmesan cheese, stirring until melted and the soup is creamy.</li>
-            <li>Reduce the heat to low and add basil and lemon juice and adjust the seasoning with additional salt and pepper, if needed.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Serve:</strong>
-        <ul>
-            <li>Serve the soup hot, garnished with extra Parmesan cheese and a sprinkle of fresh herbs if desired.</li>
-        </ul>
-    </li>
-</ol>
-
-<h3>Tips</h3>
-<ul class="tips-list">
-    <li>
-        <strong>Sauté Vegetables Properly</strong>
-        <ul>
-            <li>Make sure the vegetables are softened and just starting to caramelize to release their natural sweetness and enhance the overall flavor of the soup.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Use High-Quality Broth</strong>
-        <ul>
-            <li>Use a high-quality chicken or vegetable broth. If you have homemade broth, it’s even better. Store-bought broth can be enhanced with a little bit of extra seasoning or by simmering it with additional herbs.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Add Dairy Gradually</strong>
-        <ul>
-            <li>Lower the heat before adding the cream and stir continuously. You can temper the cream by adding a small amount of hot broth to it before mixing it into the pot.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Cook Tortellini to Al Dente</strong>
-        <ul>
-            <li>Cook the tortellini just until al dente, following the package instructions. They will continue to cook slightly in the hot soup.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Season to Taste</strong>
-        <ul>
-            <li>Taste the soup before serving and adjust the seasoning with salt and pepper. A bit of freshly grated nutmeg can also enhance the flavor of creamy soups.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Fresh Spinach at the End</strong>
-        <ul>
-            <li>Stir in the spinach just before serving and cook until just wilted. This keeps the spinach from becoming overcooked and slimy.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Cheese for Creaminess</strong>
-        <ul>
-            <li>Use freshly grated Parmesan cheese and stir it in just before serving for a smooth, creamy texture.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Storage and Reheating</strong>
-        <ul>
-            <li>Store leftovers in an airtight container in the refrigerator for up to 3 days. Reheat gently over low heat to avoid breaking the creamy base. Add a splash of broth or cream if the soup thickens too much upon standing.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Optional Garnishes</strong>
-        <ul>
-            <li>Garnish with extra Parmesan cheese, lemon zest, crushed red pepper, or fresh parsley for added flavor and a pop of color.</li>
-        </ul>
-    </li>
-</ul>
-
+    </div>
     <footer>
         &copy; 2025 Tom and Lily Malachowski. All rights reserved.
     </footer>
@@ -313,7 +286,7 @@
         const scalorInput = document.getElementById('scalor');
         const qtySpans = document.querySelectorAll('.qty');
         const altQtySpans = document.querySelectorAll('.alt-qty');
-
+    
         function updateQuantities() {
             const scalor = parseFloat(scalorInput.value) || 1;
             qtySpans.forEach(span => {
@@ -327,7 +300,7 @@
                 span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
             });
         }
-
+    
         scalorInput.addEventListener('input', updateQuantities);
         // Initialize on page load
         updateQuantities();
