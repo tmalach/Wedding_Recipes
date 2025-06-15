@@ -5,30 +5,6 @@
     <title>Remi Pot Pie</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/Wedding_Recipes/Pictures/favicon.ico" />
-    <style>
-        .checkbox-list {
-            list-style: none;
-            padding: 0;
-        }
-        .checkbox-list li {
-            margin-bottom: 0.5em;
-            font-size: 1.1em;
-        }
-        .checkbox-list input[type="checkbox"] {
-            transform: scale(1.2);
-            margin-right: 0.6em;
-            accent-color: #333;
-        }
-        .scaling-input {
-            margin: 1em 0;
-            font-size: 1.1em;
-        }
-        .scaling-input input {
-            width: 3em;
-            font-size: 1em;
-            text-align: right;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -66,151 +42,140 @@
         <img src="/Wedding_Recipes/Pictures/Remi_Pot_Pie.png"
              alt="Remi Pot Pie - a savory treat for little man"
              style="display:block; margin: 1.5rem auto; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
-        
+        <figcaption class="img-caption">Image generated with ChatGPT.</figcaption>
         <div class="scaling-input">
             <label for="scalor">Scale ingredients by: </label>
             <input type="number" id="scalor" value="1" min="0.1" step="0.1">
             <span>(e.g., 2 for double, 0.5 for half)</span>
         </div>
-
-<h3>Ingredients</h3>
-
-<h4>For Dog-Safe Pie Crust:</h4>
-<ul class="checkbox-list" id="ingredients-list-crust">
-  <li>
-    <label>
-      <input type="checkbox">
-      <span class="qty" data-base="2">2</span> cups
-      (<span class="alt-qty" data-alt-base="260">260</span> g) whole wheat flour
-    </label>
-  </li>
-  <li>
-    <label>
-      <input type="checkbox">
-      <span class="qty" data-base="0.5">½</span> cup
-      (<span class="alt-qty" data-alt-base="120">120</span> g) unsweetened pumpkin purée
-    </label>
-  </li>
-  <li>
-    <label>
-      <input type="checkbox">
-      <span class="qty" data-base="2">2</span> tablespoons
-      (<span class="alt-qty" data-alt-base="30">30</span> ml) olive oil
-    </label>
-  </li>
-  <li>
-    <label>
-      <input type="checkbox">
-      <span class="qty" data-base="0.25">¼</span> cup
-      (<span class="alt-qty" data-alt-base="60">60</span> ml) unsalted chicken broth (low sodium)
-    </label>
-  </li>
-  <li>
-    <label>
-      <input type="checkbox">
-      1 egg (for egg wash, optional)
-    </label>
-  </li>
-</ul>
-
-<h4>For Filling:</h4>
-<ul class="checkbox-list" id="ingredients-list-filling">
-  <li>
-    <label>
-      <input type="checkbox">
-      <span class="qty" data-base="0.5">½</span> pound
-      (<span class="alt-qty" data-alt-base="250">250</span> g) boneless, skinless chicken breast or thighs, cubed
-    </label>
-  </li>
-  <li>
-    <label>
-      <input type="checkbox">
-      <span class="qty" data-base="1">1</span> tablespoon
-      (<span class="alt-qty" data-alt-base="15">15</span> ml) olive oil
-    </label>
-  </li>
-  <li>
-    <label>
-      <input type="checkbox">
-      <span class="qty" data-base="0.75">¾</span> cup
-      (<span class="alt-qty" data-alt-base="100">100</span> g) carrots, finely diced
-    </label>
-  </li>
-  <li>
-    <label>
-      <input type="checkbox">
-      <span class="qty" data-base="1">1</span> cup
-      (<span class="alt-qty" data-alt-base="100">100</span> g) green beans or peas (no onions)
-    </label>
-  </li>
-  <li>
-    <label>
-      <input type="checkbox">
-      <span class="qty" data-base="0.67">⅔</span> cup
-      (<span class="alt-qty" data-alt-base="160">160</span> g) pumpkin purée (unsweetened)
-    </label>
-  </li>
-  <li>
-    <label>
-      <input type="checkbox">
-      <span class="qty" data-base="0.75">¾</span> cup
-      (<span class="alt-qty" data-alt-base="180">180</span> ml) low-sodium chicken broth (no onions or garlic)
-    </label>
-  </li>
-  <li>
-    <label>
-      <input type="checkbox">
-      <span class="qty" data-base="1">1</span> tablespoon whole wheat flour (or oat flour)
-    </label>
-  </li>
-</ul>
-
-<h3>Instructions</h3>
-<ol>
-  <li>
-    <strong>Assemble Pie:</strong>
-    <ul>
-      <li>In a bowl, mix flour, pumpkin purée, and olive oil.</li>
-      <li>Gradually add chicken broth until a dough forms.</li>
-      <li>Roll out dough on a floured surface. Cut the dough into multiple sheets to fit ramekins. Make sure the dough is sufficiently thin to line the ramekins.</li>
-      <li>Set aside extra dough if you’d like a top crust or decorative shapes.</li>
-      <li>Chill crust in fridge while preparing filling.</li>
-    </ul>
-  </li>
-  <li>
-    <strong>Preheat Oven:</strong>
-    <ul>
-      <li>Preheat to 350°F (180°C).</li>
-    </ul>
-  </li>
-  <li>
-    <strong>Cook Filling:</strong>
-    <ul>
-      <li>In a pan, heat olive oil over medium heat. Add chopped chicken and cook for about 3 minutes.</li>
-      <li>Add carrots and green beans/peas and cook for another 5 minutes.</li>
-      <li>Add flour and cook for 1–3 minutes.</li>
-      <li>Pour in broth slowly and mix to avoid clumping.</li>
-      <li>Add pumpkin purée, and simmer 5–10 minutes. If needed, dissolve 1 tablespoon of cornstarch in 1 tablespoon of water, mix, and add to thicken.</li>
-      <li>Allow the mixture to cool before assembling the pies.</li>
-    </ul>
-  </li>
-  <li>
-    <strong>Bake:</strong>
-    <ul>
-      <li>Line the bottom and sides of each ramekin with chilled dough.</li>
-      <li>Fill with cooled chicken mixture.</li>
-      <li>Top with crust (optional). Crimp the edges with a fork.</li>
-      <li>Bake for 20–35 minutes until golden brown. Cool fully before serving.</li>
-    </ul>
-  </li>
-</ol>
-
-<h3>Notes</h3>
-<ul class="tips-list">
-    <li><strong>Dog-friendly Ingredients</strong>Make sure to use dog friendly ingredients. Avoid members of the allium family (onion, garlic, shallots, leeks, etc.). Avoid overly salty broths and other spices. Check online to make sure any added ingredients are safe. Ensure no ingredients contain fillers like xylitol which are extremely toxic to dogs.</li>
-    <li><strong>Calories:</strong> Each pie should contain 18 g protein, 12 g fat, 32 g carbohydrates, and 4  g fiber for a total of 310 calories (according to AI estimate).</li>
-</ul>
-
+        <h3>Ingredients</h3>
+        <h4>For Dog-Safe Pie Crust:</h4>
+        <ul class="checkbox-list" id="ingredients-list-crust">
+          <li>
+            <label>
+              <input type="checkbox">
+              <span class="qty" data-base="2">2</span> cups
+              (<span class="alt-qty" data-alt-base="260">260</span> g) whole wheat flour
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox">
+              <span class="qty" data-base="0.5">½</span> cup
+              (<span class="alt-qty" data-alt-base="120">120</span> g) unsweetened pumpkin purée
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox">
+              <span class="qty" data-base="2">2</span> tablespoons
+              (<span class="alt-qty" data-alt-base="30">30</span> ml) olive oil
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox">
+              <span class="qty" data-base="0.25">¼</span> cup
+              (<span class="alt-qty" data-alt-base="60">60</span> ml) unsalted chicken broth (low sodium)
+            </label>
+          </li>
+        </ul>
+        <h4>For Filling:</h4>
+        <ul class="checkbox-list" id="ingredients-list-filling">
+          <li>
+            <label>
+              <input type="checkbox">
+              <span class="qty" data-base="0.5">½</span> pound
+              (<span class="alt-qty" data-alt-base="250">250</span> g) boneless, skinless chicken breast or thighs, cubed
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox">
+              <span class="qty" data-base="1">1</span> tablespoon
+              (<span class="alt-qty" data-alt-base="15">15</span> ml) olive oil
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox">
+              <span class="qty" data-base="0.75">¾</span> cup
+              (<span class="alt-qty" data-alt-base="100">100</span> g) carrots, finely diced
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox">
+              <span class="qty" data-base="1">1</span> cup
+              (<span class="alt-qty" data-alt-base="100">100</span> g) green beans or peas (no onions)
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox">
+              <span class="qty" data-base="0.67">⅔</span> cup
+              (<span class="alt-qty" data-alt-base="160">160</span> g) pumpkin purée (unsweetened)
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox">
+              <span class="qty" data-base="0.75">¾</span> cup
+              (<span class="alt-qty" data-alt-base="180">180</span> ml) low-sodium chicken broth (no onions or garlic)
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox">
+              <span class="qty" data-base="1">1</span> tablespoon whole wheat flour (or oat flour)
+            </label>
+          </li>
+        </ul>
+        <h3>Instructions</h3>
+        <ol>
+          <li>
+            <strong>Assemble Pie:</strong>
+            <ul>
+              <li>In a bowl, mix flour, pumpkin purée, and olive oil.</li>
+              <li>Gradually add chicken broth until a dough forms.</li>
+              <li>Roll out dough on a floured surface. Cut the dough into multiple sheets to fit ramekins. Make sure the dough is sufficiently thin to line the ramekins.</li>
+              <li>Set aside extra dough if you’d like a top crust or decorative shapes.</li>
+              <li>Chill crust in fridge while preparing filling.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Preheat Oven:</strong>
+            <ul>
+              <li>Preheat to 350°F (175°C).</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Cook Filling:</strong>
+            <ul>
+              <li>In a pan, heat olive oil over medium heat. Add chopped chicken and cook for about 3 minutes.</li>
+              <li>Add carrots and green beans/peas and cook for another 5 minutes.</li>
+              <li>Add flour and cook for 1–3 minutes.</li>
+              <li>Pour in broth slowly and mix to avoid clumping.</li>
+              <li>Add pumpkin purée, and simmer 5–10 minutes. If needed, dissolve 1 tablespoon of cornstarch in 1 tablespoon of water, mix, and add to thicken.</li>
+              <li>Allow the mixture to cool before assembling the pies.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Bake:</strong>
+            <ul>
+              <li>Line the bottom and sides of each ramekin with chilled dough.</li>
+              <li>Fill with cooled chicken mixture.</li>
+              <li>Top with crust (optional). Crimp the edges with a fork.</li>
+              <li>Bake for 20–35 minutes until golden brown. Cool fully before serving.</li>
+            </ul>
+          </li>
+        </ol>
+        <h3>Notes</h3>
+        <ul class="tips-list">
+            <li><strong>Dog-friendly Ingredients</strong>Make sure to use dog friendly ingredients. Avoid members of the allium family (onion, garlic, shallots, leeks, etc.). Avoid overly salty broths and other spices. Check online to make sure any added ingredients are safe. Ensure no ingredients contain fillers like xylitol which are extremely toxic to dogs.</li>
+            <li><strong>Calories:</strong> Each pie should contain 18 g protein, 12 g fat, 32 g carbohydrates, and 4  g fiber for a total of 310 calories (according to AI estimate).</li>
+        </ul>
+    </div>
     <footer>
         &copy; 2025 Tom and Lily Malachowski. All rights reserved.
     </footer>
@@ -225,12 +190,12 @@
             qtySpans.forEach(span => {
                 const base = parseFloat(span.getAttribute('data-base'));
                 let scaled = base * scalor;
-                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+                span.textContent = (scaled % 1 === 0) ? scaled : +scaled.toFixed(2);
             });
             altQtySpans.forEach(span => {
                 const base = parseFloat(span.getAttribute('data-alt-base'));
                 let scaled = base * scalor;
-                span.textContent = (scaled % 1 === 0) ? scaled : scaled.toFixed(2);
+                span.textContent = (scaled % 1 === 0) ? scaled : +scaled.toFixed(2);
             });
         }
 
