@@ -235,10 +235,10 @@
             const everclearWeight = (everclearVol_mL * everclearDensity)
         
             // Output
-            document.getElementById('everclearVol').textContent = Math.round(everclearVol_mL) + 'ml' + ' (' + Math.round(everclearWeight) + 'g)';
+            document.getElementById('everclearVol').textContent = Math.round(everclearVol_mL) + ' ml' + ' (' + Math.round(everclearWeight) + ' g)';
             document.getElementById('lemons').textContent = lemons;
-            document.getElementById('waterVol').textContent = Math.round(waterVol_mL) + 'ml' + ' (' + Math.round(waterWeight) + 'g)';
-            document.getElementById('totalSugar').textContent = Math.round(totalSugar) + 'g' + ' (' + Math.round(sugarVolume_mL) + 'ml)';
+            document.getElementById('waterVol').textContent = Math.round(waterVol_mL) + ' ml' + ' (' + Math.round(waterWeight) + ' g)';
+            document.getElementById('totalSugar').textContent = Math.round(totalSugar) + ' g' + ' (' + Math.round(sugarVolume_mL) + ' ml)';
         }
         
         // Set up event listeners
