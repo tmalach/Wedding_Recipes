@@ -82,140 +82,139 @@
         <h2>Crema di Limoncello</h2>
         <img src="/Wedding_Recipes/Pictures/Crema_di_Limoncello.png"
              alt="Crema di Limoncello - freshing, sweet digestif"
-             style="display:block; margin: 1.5rem auto; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
-        
-    <div class="limoncello-table-container">
-        <h3>Crema di Limoncello Batch Calculator</h3>
-        <table class="limoncello-table">
-            <tr>
-                <th>Input</th>
-                <th>Value</th>
-            </tr>
-            <tr>
-                <td>Total Volume of Crema di Limoncello (mL)</td>
-                <td><input type="number" id="totalVolume" value="1000" min="25" step="25"></td>
-            </tr>
-            <tr>
-                <td>Starting ABV of Everclear (%)</td>
-                <td><input type="number" id="everclearABV" value="75.5" min="30" max="96" step="0.5"></td>
-            </tr>
-            <tr>
-                <td>Final ABV of Crema di Limoncello (%)</td>
-                <td><input type="number" id="finalABV" value="26.2" min="5" max="50" step="0.1"></td>
-            </tr>
-            <tr>
-                <td>Final Sugar Concentration (g/L)</td>
-                <td><input type="number" id="sugarConc" value="277" min="100" max="500" step="1"></td>
-            </tr>
-        </table>
-        <table class="limoncello-table" style="margin-top:1.5rem;">
-            <tr>
-                <th>Ingredient</th>
-                <th>Amount Needed</th>
-            </tr>
-            <tr>
-                <td>Lemons</td>
-                <td class="limoncello-result" id="lemons">4</td>
-            </tr>
-            <tr>
-                <td>Everclear</td>
-                <td class="limoncello-result" id="everclearVol">347ml (288g)</td>
-            </tr>
-            <tr>
-                <td>Milk</td>
-                <td class="limoncello-result" id="milkVol">475ml (490g)</td>
-            </tr>
-            <tr>
-                <td>Total Sugar</td>
-                <td class="limoncello-result" id="totalSugar">277g (178ml)</td>
-            </tr>
-            <tr>
-                <td>Vanilla Extract</td>
-                <td class="limoncello-result" id="vanillaExtract">0.25 teaspoon</td>
-            </tr>
-        </table>
-        <table class="limoncello-table" style="margin-top:1.5rem;">
-            <tr>
-                <th>Notes</th>
-                <th> </th>
-            </tr>
-            <tr>
-                <td>Milk Density</td>
-                <td>The density of milk should be about 1.03 g/ml.</td>
-            </tr>
-                <td>Added Volume from Dissolved Sugar</td>
-                <td>Dissolving the sugar in milk should add about 0.6-0.65 ml per gram of sugar. However, during the simmering process, the volume may be smaller than the theoretical calculation due to evaporation.</td>
-            <tr>
-                <td>Milk Syrup Density</td>
-                <td>The density of the milk syrup mixture should be about 1.43 to 1.46 g/ml. Or 1.18 to 1.2</td>
-            </tr>
-            <tr>
-                <td>Everclear Density</td>
-                <td>The density of the  infused Everclear (75.5%) should be about 0.84-0.86 g/ml. If using 95% Everclear, the density should be about 0.8-0.82 g/ml. This recipe uses 0.83 g/ml for both.</td>
-            </tr>
-        </table>
+             style="display:block; margin: 0rem auto; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+        <figcaption class="img-caption">Image generated with ChatGPT.</figcaption>
+        <div class="limoncello-table-container">
+            <h3>Crema di Limoncello Batch Calculator</h3>
+            <table class="limoncello-table">
+                <tr>
+                    <th>Input</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Total Volume of Crema di Limoncello (mL)</td>
+                    <td><input type="number" id="totalVolume" value="1000" min="25" step="25"></td>
+                </tr>
+                <tr>
+                    <td>Starting ABV of Everclear (%)</td>
+                    <td><input type="number" id="everclearABV" value="75.5" min="30" max="96" step="0.5"></td>
+                </tr>
+                <tr>
+                    <td>Final ABV of Crema di Limoncello (%)</td>
+                    <td><input type="number" id="finalABV" value="26.2" min="5" max="50" step="0.1"></td>
+                </tr>
+                <tr>
+                    <td>Final Sugar Concentration (g/L)</td>
+                    <td><input type="number" id="sugarConc" value="277" min="100" max="500" step="1"></td>
+                </tr>
+            </table>
+            <table class="limoncello-table" style="margin-top:1.5rem;">
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Amount Needed</th>
+                </tr>
+                <tr>
+                    <td>Lemons</td>
+                    <td class="limoncello-result" id="lemons">4</td>
+                </tr>
+                <tr>
+                    <td>Everclear</td>
+                    <td class="limoncello-result" id="everclearVol">347 ml (288 g)</td>
+                </tr>
+                <tr>
+                    <td>Milk</td>
+                    <td class="limoncello-result" id="milkVol">475 ml (490 g)</td>
+                </tr>
+                <tr>
+                    <td>Total Sugar</td>
+                    <td class="limoncello-result" id="totalSugar">277 g (178 ml)</td>
+                </tr>
+                <tr>
+                    <td>Vanilla Extract</td>
+                    <td class="limoncello-result" id="vanillaExtract">0.25 teaspoon</td>
+                </tr>
+            </table>
+            <table class="limoncello-table" style="margin-top:1.5rem;">
+                <tr>
+                    <th>Notes</th>
+                    <th> </th>
+                </tr>
+                <tr>
+                    <td>Milk Density</td>
+                    <td>The density of milk should be about 1.03 g/ml.</td>
+                </tr>
+                    <td>Added Volume from Dissolved Sugar</td>
+                    <td>Dissolving the sugar in milk should add about 0.6-0.65 ml per gram of sugar. However, during the simmering process, the volume may be smaller than the theoretical calculation due to evaporation.</td>
+                <tr>
+                    <td>Milk Syrup Density</td>
+                    <td>The density of the milk syrup mixture should be about 1.43 to 1.46 g/ml. Or 1.18 to 1.2</td>
+                </tr>
+                <tr>
+                    <td>Everclear Density</td>
+                    <td>The density of the  infused Everclear (75.5%) should be about 0.84-0.86 g/ml. If using 95% Everclear, the density should be about 0.8-0.82 g/ml. This recipe uses 0.83 g/ml for both.</td>
+                </tr>
+            </table>
+        </div>
+        <h3>Instructions</h3>
+        <ol>
+          <li>
+            <strong>Prepare the Lemons:</strong>
+            <ul>
+              <li>Wash the lemons thoroughly to remove any dirt or wax.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Isolate the Rind from the Lemons:</strong>
+            <ul>
+              <li>Use a paring knife to peel off the rind from the lemons, avoiding the white pith as much as possible. Alternatively, use a zester or microplane to remove the lemon zest.</li>
+              <li>Shear or shave (preferred) off extra pith from the lemon rinds with the paring knife if necessary.</li>
+              <li>Place the lemon peels in a large glass jar or airtight container.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Infuse the Everclear:</strong>
+            <ul>
+              <li>Pour the Everclear over the lemon peels, making sure they are fully submerged.</li>
+              <li>Seal the jar tightly and let it sit at room temperature in a dark spot for at least 20–30 (preferred) days. The peels can also sit for longer than 30 days. Mix intermittently.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Make the Dilutant:</strong>
+            <ul>
+              <li>After the infusion period, prepare milk syrup by combining the milk and sugar in a saucepan over medium heat. Increase the heat slowly instead of blasting heat to prevent the milk from curdling.</li>
+              <li>Stir until the sugar is completely dissolved. The mixture should come to a gentle simmer but do not boil. Stir often/constantly.</li>
+              <li>Once fully dissolved, remove from heat. Remove milk skin on the top of the liquid with a spoon. Let it cool to room temperature.</li>
+              <li>Strain the milk syrup through a fine-mesh sieve or cheesecloth to remove any curdled chunks or milk proteins.</li>
+              <li>Allow the milk syrup mixture to chill in the fridge until cold.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Make the Crema di Limoncello and Chill:</strong>
+            <ul>
+              <li>Strain the infused liquor through a fine-mesh sieve or cheesecloth to remove the lemon peels. Discard the peels.</li>
+              <li>Gradually add the infused liquor to the cooled milk syrup while mixing. Do not pour the cooled milk syrup into the infused liquor.</li>
+              <li>Seal the bottles and store them in the refrigerator for at least 4 hours before serving. Ideally, let them steep for 2+ weeks for flavors to infuse and mellow. Alternatively, the Crema di Limoncello can also mellow in a cool dark place instead.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Serve:</strong>
+            <ul>
+              <li>Serve the Crema di Limoncello chilled in small glasses as a refreshing digestif. Store in refrigerator long-term.</li>
+            </ul>
+          </li>
+        </ol>
+        <h3>Tips</h3>
+        <ul class="tips-list">
+          <li><strong>Choose organic lemons:</strong> Since you'll be using the peel/zest of the lemons, it's best to use organic ones to avoid any pesticides or wax on the peel.</li>
+          <li><strong>Infusion time:</strong> The longer you let the lemon peels infuse in the Everclear, the stronger the lemon flavor will be. While a minimum of 1 week is recommended, you can let it infuse for 6+ weeks for a more intense flavor.</li>
+          <li><strong>Straining:</strong> When straining the infused Everclear, use a fine-mesh sieve or cheesecloth to remove any lemon particles or sediment, resulting in a smooth Crema di Limoncello.</li>
+          <li><strong>Adjust sweetness:</strong> Taste the Crema di Limoncello as you add the milk syrup to adjust the sweetness to your liking. Some prefer it sweeter, while others prefer it less sweet. Start with less syrup and gradually add more until you reach your desired sweetness level. If altering the Brix of the Crema di Limoncello, be aware that the ABV will be altered.</li>
+          <li><strong>Milk or Half-and-Half:</strong> The addition of milk or half-and-half gives the Crema di Limoncello a creamy texture and helps balance the tartness of the lemons. Make sure to use fresh milk or cream for the best results.</li>
+          <li><strong>Chilling:</strong> After bottling, refrigerate the Crema di Limoncello for at least 4 hours before serving. Serving it chilled enhances the refreshing taste. Allowing the Crema di Limoncello to steep for an additional 1–2+ weeks will mellow flavor and make a smoother product.</li>
+          <li><strong>Presentation:</strong> Consider bottling the Crema di Limoncello in decorative glass bottles or jars for a stylish presentation, especially if you plan to give it as a gift.</li>
+          <li><strong>Enjoy responsibly:</strong> Crema di Limoncello is typically served in small glasses as a digestif after meals. It's potent, so enjoy it in moderation.</li>
+        </ul>
     </div>
-
-<h3>Instructions</h3>
-<ol>
-  <li>
-    <strong>Prepare the Lemons:</strong>
-    <ul>
-      <li>Wash the lemons thoroughly to remove any dirt or wax.</li>
-    </ul>
-  </li>
-  <li>
-    <strong>Isolate the Rind from the Lemons:</strong>
-    <ul>
-      <li>Use a paring knife to peel off the rind from the lemons, avoiding the white pith as much as possible. Alternatively, use a zester or microplane to remove the lemon zest.</li>
-      <li>Shear or shave (preferred) off extra pith from the lemon rinds with the paring knife if necessary.</li>
-      <li>Place the lemon peels in a large glass jar or airtight container.</li>
-    </ul>
-  </li>
-  <li>
-    <strong>Infuse the Everclear:</strong>
-    <ul>
-      <li>Pour the Everclear over the lemon peels, making sure they are fully submerged.</li>
-      <li>Seal the jar tightly and let it sit at room temperature in a dark spot for at least 20–30 (preferred) days. The peels can also sit for longer than 30 days. Mix intermittently.</li>
-    </ul>
-  </li>
-  <li>
-    <strong>Make the Dilutant:</strong>
-    <ul>
-      <li>After the infusion period, prepare milk syrup by combining the milk and sugar in a saucepan over medium heat. Increase the heat slowly instead of blasting heat to prevent the milk from curdling.</li>
-      <li>Stir until the sugar is completely dissolved. The mixture should come to a gentle simmer but do not boil. Stir often/constantly.</li>
-      <li>Once fully dissolved, remove from heat. Remove milk skin on the top of the liquid with a spoon. Let it cool to room temperature.</li>
-      <li>Strain the milk syrup through a fine-mesh sieve or cheesecloth to remove any curdled chunks or milk proteins.</li>
-      <li>Allow the milk syrup mixture to chill in the fridge until cold.</li>
-    </ul>
-  </li>
-  <li>
-    <strong>Make the Crema di Limoncello and Chill:</strong>
-    <ul>
-      <li>Strain the infused liquor through a fine-mesh sieve or cheesecloth to remove the lemon peels. Discard the peels.</li>
-      <li>Gradually add the infused liquor to the cooled milk syrup while mixing. Do not pour the cooled milk syrup into the infused liquor.</li>
-      <li>Seal the bottles and store them in the refrigerator for at least 4 hours before serving. Ideally, let them steep for 2+ weeks for flavors to infuse and mellow. Alternatively, the Crema di Limoncello can also mellow in a cool dark place instead.</li>
-    </ul>
-  </li>
-  <li>
-    <strong>Serve:</strong>
-    <ul>
-      <li>Serve the Crema di Limoncello chilled in small glasses as a refreshing digestif. Store in refrigerator long-term.</li>
-    </ul>
-  </li>
-</ol>
-
-<h3>Tips</h3>
-<ul class="tips-list">
-  <li><strong>Choose organic lemons:</strong> Since you'll be using the peel/zest of the lemons, it's best to use organic ones to avoid any pesticides or wax on the peel.</li>
-  <li><strong>Infusion time:</strong> The longer you let the lemon peels infuse in the Everclear, the stronger the lemon flavor will be. While a minimum of 1 week is recommended, you can let it infuse for 6+ weeks for a more intense flavor.</li>
-  <li><strong>Straining:</strong> When straining the infused Everclear, use a fine-mesh sieve or cheesecloth to remove any lemon particles or sediment, resulting in a smooth Crema di Limoncello.</li>
-  <li><strong>Adjust sweetness:</strong> Taste the Crema di Limoncello as you add the milk syrup to adjust the sweetness to your liking. Some prefer it sweeter, while others prefer it less sweet. Start with less syrup and gradually add more until you reach your desired sweetness level. If altering the Brix of the Crema di Limoncello, be aware that the ABV will be altered.</li>
-  <li><strong>Milk or Half-and-Half:</strong> The addition of milk or half-and-half gives the Crema di Limoncello a creamy texture and helps balance the tartness of the lemons. Make sure to use fresh milk or cream for the best results.</li>
-  <li><strong>Chilling:</strong> After bottling, refrigerate the Crema di Limoncello for at least 4 hours before serving. Serving it chilled enhances the refreshing taste. Allowing the Crema di Limoncello to steep for an additional 1–2+ weeks will mellow flavor and make a smoother product.</li>
-  <li><strong>Presentation:</strong> Consider bottling the Crema di Limoncello in decorative glass bottles or jars for a stylish presentation, especially if you plan to give it as a gift.</li>
-  <li><strong>Enjoy responsibly:</strong> Crema di Limoncello is typically served in small glasses as a digestif after meals. It's potent, so enjoy it in moderation.</li>
-</ul>
     <footer>
         &copy; 2025 Tom and Lily Malachowski. All rights reserved.
     </footer>
@@ -243,10 +242,10 @@
             const everclearWeight = (everclearVol_mL * everclearDensity)
         
             // Output
-            document.getElementById('everclearVol').textContent = Math.round(everclearVol_mL) + 'ml' + ' (' + Math.round(everclearWeight) + 'g)';
+            document.getElementById('everclearVol').textContent = Math.round(everclearVol_mL) + ' ml' + ' (' + Math.round(everclearWeight) + ' g)';
             document.getElementById('lemons').textContent = lemons;
-            document.getElementById('milkVol').textContent = Math.round(milkVol_mL) + 'ml' + ' (' + Math.round(milkWeight) + 'g)';
-            document.getElementById('totalSugar').textContent = Math.round(totalSugar) + 'g' + ' (' + Math.round(sugarVolume_mL) + 'ml)';
+            document.getElementById('milkVol').textContent = Math.round(milkVol_mL) + ' ml' + ' (' + Math.round(milkWeight) + ' g)';
+            document.getElementById('totalSugar').textContent = Math.round(totalSugar) + ' g' + ' (' + Math.round(sugarVolume_mL) + ' ml)';
             document.getElementById('vanillaExtract').textContent = +totalVanillaExtract.toFixed(3) + ' teaspoon(s)';
         }
         
